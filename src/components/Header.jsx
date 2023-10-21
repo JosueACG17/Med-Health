@@ -1,97 +1,221 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 function Header() {
-  const [isMenuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!isMenuOpen);
-  };
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white">
-      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
-          <a className="block text-teal-600" href="/">
-            <span className="sr-only">Home</span>
-            <img
-              className="h-8"
-              src="https://e7.pngegg.com/pngimages/83/15/png-clipart-logo-health-care-medicine-hospital-automotive-battery-emblem-logo.png"
-              alt="Logo"
-            />
-
-          </a>
-
-          <div className="sm:hidden flex items-center">
-            <button
-              onClick={toggleMenu}
-              className="text-teal-600 p-2 focus:outline-none"
-            >
-              {/* Icono del menú (hamburguesa) */}
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
-              </svg>
-            </button>
-          </div>
-
-          <nav
-            className={`${
-              isMenuOpen ? 'block' : 'hidden'
-            } sm:block sm:flex sm:items-center sm:gap-12`}
+    <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-full md:px-24 lg:px-8 bg-blue-700">
+      <div class="relative flex items-center justify-between ">
+        <a
+          href="/"
+          aria-label="Company"
+          title="Company"
+          class="inline-flex items-center"
+        >
+          <svg
+            class="w-8 text-purple-400"
+            viewBox="0 0 24 24"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeMiterlimit="10"
+            stroke="currentColor"
+            fill="none"
           >
-            <ul className="flex items-center gap-6 text-sm">
-              <li>
-                <a
-                  className="text-gray-500 transition hover:text-green-700 "
-                  href="/"
-                >
-                  Home
-                </a>
-              </li>
-
-              <li>
-                <a
-                  className="text-gray-500 transition hover:text-green-700"
-                  href="/"
-                >
-                  Nosotros
-                </a>
-              </li>
-
-              <li>
-                <a
-                  className="text-gray-500 transition hover:text-green-700"
-                  href="/"
-                >
-                  Servicios
-                </a>
-              </li>
-
-              <li>
-                <a
-                  className="text-gray-500 transition hover:text-green-700"
-                  href="/"
-                >
-                  Contáctanos
-                </a>
-              </li>
-            </ul>
-          </nav>
+            <rect x="3" y="1" width="7" height="12" />
+            <rect x="3" y="17" width="7" height="6" />
+            <rect x="14" y="1" width="7" height="6" />
+            <rect x="14" y="11" width="7" height="12" />
+          </svg>
+          <span class="ml-2 text-xl font-bold tracking-wide text-white">
+            Med-Health
+          </span>
+        </a>
+        <ul class="flex items-center hidden space-x-8 lg:flex">
+          <li>
+            <a
+              href="/"
+              aria-label="Our product"
+              title="Our product"
+              class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-black"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="/nosotros"
+              aria-label="Our product"
+              title="Our product"
+              class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-black"
+            >
+              Nosotros
+            </a>
+          </li>
+          <li>
+            <a
+              href="/servicios"
+              aria-label="Product pricing"
+              title="Product pricing"
+              class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-black"
+            >
+              Servicios
+            </a>
+          </li>
+          <li>
+            <a
+              href="/contacto"
+              aria-label="About us"
+              title="About us"
+              class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-black"
+            >
+              Contacto
+            </a>
+          </li>
+        </ul>
+        <ul class="flex items-center hidden space-x-8 lg:flex">
+          <li>
+            <a
+              href="/login"
+              class="inline-flex items-center justify-center h-9 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-500 hover:bg-cyan-500 focus:shadow-outline focus:outline-none"
+              aria-label="Sign up"
+              title="Sign up"
+            >
+              Inicia Sesión
+            </a>
+          </li>
+        </ul>
+        <div class="lg:hidden">
+          <button
+            aria-label="Open Menu"
+            title="Open Menu"
+            class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50"
+            onClick={() => setIsMenuOpen(true)}
+          >
+            <svg class="w-5 text-white" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
+              />
+              <path
+                fill="currentColor"
+                d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"
+              />
+              <path
+                fill="currentColor"
+                d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"
+              />
+            </svg>
+          </button>
+          {isMenuOpen && (
+            <div class="absolute top-0 left-0 w-full">
+              <div class="p-6 bg-blue-700 border rounded shadow-sm">
+                <div class="flex items-center justify-between mb-4">
+                  <div>
+                    <a
+                      href="/"
+                      aria-label="Company"
+                      title="Company"
+                      class="inline-flex items-center"
+                    >
+                      <svg
+                        class="w-8 text-purple-400"
+                        viewBox="0 0 24 24"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeMiterlimit="10"
+                        stroke="currentColor"
+                        fill="none"
+                      >
+                        <rect x="3" y="1" width="7" height="12" />
+                        <rect x="3" y="17" width="7" height="6" />
+                        <rect x="14" y="1" width="7" height="6" />
+                        <rect x="14" y="11" width="7" height="12" />
+                      </svg>
+                      <span class="ml-2 text-xl font-bold tracking-wide text-white uppercase">
+                        Med-Health
+                      </span>
+                    </a>
+                  </div>
+                  <div>
+                    <button
+                      aria-label="Close Menu"
+                      title="Close Menu"
+                      class="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-black focus:bg-black focus:outline-none focus:shadow-outline"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      <svg class="w-5 text-white" viewBox="0 0 24 24">
+                        <path
+                          fill="currentColor"
+                          d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <nav>
+                  <ul class="space-y-4">
+                    <li>
+                      <a
+                        href="/"
+                        aria-label="Our product"
+                        title="Our product"
+                        class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-black"
+                      >
+                        Home
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/nosotros"
+                        aria-label="Our product"
+                        title="Our product"
+                        class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-black"
+                      >
+                        Nosotros
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/servicios"
+                        aria-label="Product pricing"
+                        title="Product pricing"
+                        class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-black"
+                      >
+                        Servicios
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/contacto"
+                        aria-label="About us"
+                        title="About us"
+                        class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-black"
+                      >
+                        Contactanos
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/"
+                        class="inline-flex items-center justify-center w-full h-10 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-500 hover:bg-cyan-500 focus:shadow-outline focus:outline-none"
+                        aria-label="Sign up"
+                        title="Sign up"
+                      >
+                        Inicia Sesión
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          )}
         </div>
       </div>
-    </header>
+    </div>
   );
-}
+};
 
 export default Header;
+
