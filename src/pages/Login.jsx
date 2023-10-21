@@ -1,6 +1,10 @@
 import React from "react";
-import imagen from "../img/login.png"
+import imagen from "../img/doc_log.png"
+import face from "../img/facebook.png"
+import google from "../img/google.png"
+import twiter from "../img/twiter.png"
 import "../styles/login.css";
+import { Link } from "react-router-dom";
 
 function Login() {
     return (
@@ -11,7 +15,7 @@ function Login() {
                         className="sm:w-1/2 xl:w-2/5 h-full hidden md:flex flex-auto items-center justify-start p-10 overflow-hidden bg-purple-900 text-white bg-no-repeat bg-cover relative"
                         style={{
                             backgroundImage:
-                                "url(https://images.unsplash.com/photo-1579451861283-a2239070aaa9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)"
+                                "url(https://images.pexels.com/photos/9741487/pexels-photo-9741487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"
                         }}
                     >
                         <div className="absolute bg-gradient-to-b from-blue-900 to-gray-900 opacity-75 inset-0 z-0" />
@@ -32,7 +36,7 @@ function Login() {
                         />
                         <div className="w-full  max-w-md z-10">
                             <div className="sm:text-4xl xl:text-5xl font-bold leading-tight mb-6">
-                                Siempre Med-Health
+                                Bienvenido aﾠﾠMed-Health
                             </div>
                         </div>
 
@@ -53,7 +57,7 @@ function Login() {
                         <div className="max-w-md w-full space-y-8">
                             <div className="text-center">
                                 <h2 className="mt-6 text-3xl font-bold text-gray-900">
-                                    Inicia Sesion
+                                    Inicia Sesión
                                 </h2>
                             </div>
 
@@ -81,69 +85,66 @@ function Login() {
                                 </div>
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center">
-                                        <input
-                                            id="remember_me"
-                                            name="remember_me"
-                                            type="checkbox"
-                                            className="h-4 w-4 bg-blue-500 focus:ring-blue-400 border-gray-300 rounded"
-                                        />
                                         <label
                                             htmlFor="remember_me"
                                             className="ml-2 block text-sm text-gray-900"
                                         >
-                                            Remember me
+                                            ﾠﾠﾠﾠ
                                         </label>
                                     </div>
                                     <div className="text-sm">
-                                        <a href="#" className="text-indigo-400 hover:text-blue-500">
+                                        <a href="/registro" className="text-indigo-400 hover:text-black">
                                             No tienes cuenta? Registrate
                                         </a>
                                     </div>
                                 </div>
                                 <div>
+                                    <Link to="/">
                                     <button
                                         type="submit"
-                                        className="w-full flex justify-center bg-gradient-to-r from-indigo-500 to-blue-600  hover:bg-gradient-to-l hover:from-blue-500 hover:to-indigo-600 text-gray-100 p-4  rounded-full tracking-wide font-semibold  shadow-lg cursor-pointer transition ease-in duration-500"
+                                        className="w-full flex justify-center bg-gradient-to-r from-indigo-500 to-blue-600  hover:bg-gradient-to-l hover:from-blue-500 hover:to-cyan-500 text-gray-100 p-4  rounded-full tracking-wide font-semibold  shadow-lg cursor-pointer transition ease-in duration-500"
                                     >
-                                        Sign in
+                                        Iniciar Sesión
                                     </button>
+                                    </Link>
                                 </div>
                                 <div className="flex items-center justify-center space-x-2">
                                     <span className="h-px w-16 bg-black" />
-                                    <span className="font-normal text-black">or continue with</span>
+                                    <span className="font-normal text-black">O inicia sesión con</span>
                                     <span className="h-px w-16 bg-black" />
                                 </div>
                                 <div className="flex flex-row justify-center items-center space-x-3">
                                     <a
-                                        href="https://www.behance.net/ajeeshmon"
+                                        href="https://www.facebook.com"
                                         target="_blank"
-                                        className="w-11 h-11 items-center justify-center inline-flex rounded-2xl font-bold text-lg   bg-blue-900 hover:shadow-lg cursor-pointer transition ease-in duration-300"
+                                        className="w-11 h-11 items-center justify-center inline-flex rounded-2xl font-bold text-lg hover:shadow-lg cursor-pointer transition ease-in duration-300"
                                     >
                                         <img
-                                            className="w-4 h-4"
-                                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Zz48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0xNS45OTcgMy45ODVoMi4xOTF2LTMuODE2Yy0uMzc4LS4wNTItMS42NzgtLjE2OS0zLjE5Mi0uMTY5LTMuMTU5IDAtNS4zMjMgMS45ODctNS4zMjMgNS42Mzl2My4zNjFoLTMuNDg2djQuMjY2aDMuNDg2djEwLjczNGg0LjI3NHYtMTAuNzMzaDMuMzQ1bC41MzEtNC4yNjZoLTMuODc3di0yLjkzOWMuMDAxLTEuMjMzLjMzMy0yLjA3NyAyLjA1MS0yLjA3N3oiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48L2c+PC9zdmc+"
+                                            className="w-9 h-9"
+                                            src={face}
                                         />
                                     </a>
                                     <a
-                                        href="https://www.instagram.com"
+                                        href="https://twitter.com"
                                         target="_blank"
-                                        class="w-11 h-11 items-center justify-center inline-flex rounded-2xl font-bold text-lg text-white bg-red-400 hover:shadow-lg cursor-pointer transition ease-in duration-300"
+                                        class="w-11 h-11 items-center justify-center inline-flex rounded-2xl font-bold text-lg  hover:shadow-lg cursor-pointer transition ease-in duration-300"
                                     >
                                         <img
-                                            class="w-4 h-4 text-white-icon"
-                                            src="https://cdn.jsdelivr.net/npm/simple-icons@4.0.1/icons/instagram.svg"
+                                            class="w-9 h-9 text-white-icon"
+                                            src={twiter}
                                             alt="Instagram"
+
                                         />
                                     </a>
 
                                     <a
                                         href="https://www.google.com"
                                         target="_blank"
-                                        class="w-11 h-11 items-center justify-center inline-flex rounded-2xl font-bold text-lg text-white bg-yellow-400 hover:shadow-lg cursor-pointer transition ease-in duration-300"
+                                        class="w-11 h-11 items-center justify-center inline-flex rounded-2xl font-bold text-lg  hover:shadow-lg cursor-pointer transition ease-in duration-300"
                                     >
                                         <img
-                                            class="w-4 h-4 text-white-icon"
-                                            src="https://cdn.jsdelivr.net/npm/simple-icons@4.0.1/icons/google.svg"
+                                            class="w-9 h-9 text-white-icon"
+                                            src={google}
                                             alt="Google"
                                         />
                                     </a>
