@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Importa Brow
 import Registro from './pages/Registro';
 import Login from './pages/Login';
 import Nosotros from './pages/Nosotros';
+import Servicios from './pages/Servicios';
+import Serviciosdos from './pages/Serviciosdos';
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <Route path='/registro' element={<Registro/>} />
       <Route path='/login' element={<Login/>} />
       <Route path='/nosotros' element={<Nosotros/>} />
+      <Route path='/Servicios' element={<Servicios/>}></Route>
+      <Route path='/Serviciosdos' element={<Serviciosdos/>}></Route>
     </Routes>
     </BrowserRouter>
   );
