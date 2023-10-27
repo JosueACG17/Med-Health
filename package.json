@@ -10,10 +10,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-oauth/google": "^0.11.1",
+    "axios": "^1.5.1",
+    "framer-motion": "^10.16.4",
+    "kutty": "^0.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
     "react-router-dom": "^6.16.0",
-    "react-tsparticles": "^2.12.2"
+    "react-scroll": "^1.9.0",
+    "react-spring": "^9.7.3",
+    "react-tsparticles": "^2.12.2",
+    "react-visibility-sensor": "^5.1.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

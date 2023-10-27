@@ -16,8 +16,8 @@ function Contacto() {
                     <div className="container flex flex-col flex-1 px-6 py-12 mx-auto">
                         <div className="flex-1 lg:flex lg:items-center lg:-mx-6">
                             <div className="text-white lg:w-1/2 lg:mx-6">
-                                <h1 className="text-2xl font-bold capitalize lg:text-3xl">
-                                    ¡Conéctate con Nosotros!
+                                <h1 className="text-2xl font-bold capitalize lg:text-3xl text-center">
+                                    ¡Contactate con Nosotros!
                                 </h1>
                                 <p className="max-w-xl mt-6 text-justify">
                                     Estamos aquí para escucharte, responder a tus preguntas y brindarte el apoyo que necesitas. No dudes en ponerte en contacto con nuestro equipo en cualquier momento. Ya sea que tengas comentarios, sugerencias, inquietudes o simplemente desees saludarnos, estamos ansiosos por recibir tu mensaje.
@@ -73,7 +73,7 @@ function Contacto() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="mt-8 lg:w-1/2 lg:mx-6">
+                            <div className="mt-8 lg:w-1/2 lg:mx-6 ">
                                 <div className="w-full px-8 py-10 mx-auto overflow-hidden bg-white shadow-2xl rounded-xl dark:bg-gray-900 lg:max-w-xl">
                                     <form className="mt-1">
                                         <div className="flex-1">
@@ -119,8 +119,11 @@ function Contacto() {
 
             {/* MAPA DEL LUGAR */}
 
-            <section className="bg-white dark:bg-gray-900">
-                <div className="container px-6 py-12 mx-auto">
+            <section className="bg-white opacity-90"  style={{
+                    backgroundImage:
+                        'url("https://img.freepik.com/vector-gratis/fondo-patron-rombos-color-azul-marino-abstracto-banner-diseno-multiproposito_1340-17102.jpg")'
+                }}>
+                    <div className="container px-6 py-12 mx-auto mx-auto lg:mx-auto">
                     <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-3">
                         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-1">
                             <div>
@@ -146,7 +149,7 @@ function Contacto() {
                                 <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
                                     Nuestro equipo esta para ayudarte
                                 </p>
-                                <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
+                                <p className="mt-2 text-sm text-white dark:text-blue-400">
                                     correoprueba@gmail.com
                                 </p>
                             </div>

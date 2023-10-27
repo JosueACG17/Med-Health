@@ -4,6 +4,7 @@ import Login from './pages/Login';
 import Nosotros from './pages/Nosotros';
 import Contacto from './pages/Contacto';
 import Error from './pages/Error';
+import Servicios from './pages/Servicios'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path='/login' element={<Login/>} />
       <Route path='/nosotros' element={<Nosotros/>} />
       <Route path='/contacto' element={<Contacto/>} />
+      <Route path='/servicios' element={<Servicios/>} />
       <Route path='*' element={<Error/>} />
     </Routes>
     </BrowserRouter>
