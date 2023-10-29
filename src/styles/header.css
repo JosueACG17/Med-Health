@@ -1,0 +1,10 @@
+.tab-link span {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 7px; /* Ajusta este valor según tus necesidades */
+}

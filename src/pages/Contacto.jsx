@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
+import Footer from "../components/Footer"
 
 function Contacto() {
     return (
@@ -119,12 +120,12 @@ function Contacto() {
 
             {/* MAPA DEL LUGAR */}
 
-            <section className="bg-white opacity-90"  style={{
-                    backgroundImage:
-                        'url("https://img.freepik.com/vector-gratis/fondo-patron-rombos-color-azul-marino-abstracto-banner-diseno-multiproposito_1340-17102.jpg")'
-                }}>
-                    <div className="container px-6 py-12 mx-auto mx-auto lg:mx-auto">
-                    <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-3">
+            <section className="bg-white opacity-90" style={{
+                backgroundImage:
+                    'url("https://img.freepik.com/vector-gratis/fondo-patron-rombos-color-azul-marino-abstracto-banner-diseno-multiproposito_1340-17102.jpg")'
+            }}>
+                <div className="container px-6 py-12 mx-auto mx-auto lg:mx-auto mb-20 ">
+                    <div className="grid grid-cols-1 gap-12 mt-6 lg:grid-cols-3 mb-6 ">
                         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-1">
                             <div>
                                 <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
@@ -182,7 +183,7 @@ function Contacto() {
                                     Ven y conoce Med-Health
                                 </p>
                                 <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
-                                Carretera Cancún-Aeropuerto, S.M 299-Km. 11.5, 77565 Q.R.
+                                    Carretera Cancún-Aeropuerto, S.M 299-Km. 11.5, 77565 Q.R.
                                 </p>
                             </div>
                             <div>
@@ -228,7 +229,7 @@ function Contacto() {
                     </div>
                 </div>
             </section>
-
+            <Footer />
         </>
     );
 }

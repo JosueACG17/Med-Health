@@ -13,7 +13,7 @@ function Error() {
 
                 <div className="flex items-center justify-center flex-1">
                     <div className="max-w-xl px-4 py-8 mx-auto text-center">
-                    <h1 class="font-black text-blue-700 text-8xl underline mb-3">404</h1>
+                    <h1 class="font-black text-blue-800 text-8xl underline mb-3">404</h1>
                         <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                             Página no encontrada
                         </h1>
@@ -23,7 +23,7 @@ function Error() {
                         </p>
 
                         <a
-                            className="group relative inline-flex items-center overflow-hidden rounded bg-blue-700 px-10 py-3 ml-3 text-white focus:outline-none focus:ring active:bg-indigo-500"
+                            className="group relative inline-flex items-center overflow-hidden rounded bg-blue-800 px-10 py-3 ml-3 text-white focus:outline-none focus:ring active:bg-indigo-500"
                             href="/nosotros"
                         >
                             <span className="absolute -end-full transition-all group-hover:end-4">

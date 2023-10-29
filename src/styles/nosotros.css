@@ -1,9 +1,9 @@
 @keyframes colorWave {
-    0% { background-color: #2857e5;  }
-    25% { background-color: #1d97e3; }
-    50% { background-color: #1570e7; }
-    75% { background-color: #1d97e3;}
-    100% { background-color: #2857e5;   }
+    0% { background-color:rgb(29 78 216);}
+    25% { background-color: #135ed6; }
+    50% { background-color: #2758e0; }
+    75% { background-color: #135ed6; }
+    100% { background-color:  rgb(29 78 216)}
 }
 
 .colorWave-effect {

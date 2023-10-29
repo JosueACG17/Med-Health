@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import imagen from "../img/doctoraa.png"
 import "../styles/login.css";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
-import { googleLogout, useGoogleLogin } from '@react-oauth/google';
+import { useGoogleLogin } from '@react-oauth/google';
 import axios from "axios";
 
 function Login() {
