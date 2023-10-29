@@ -1,0 +1,22 @@
+.box {
+    --mask: 
+      linear-gradient(to top,#0000 30px,#000 0),
+      radial-gradient(30px,#000 98%,#0000) bottom/55.50px 60px;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+            background-color: #93dfff;
+  }
+
+  .color{
+    background: rgb(0, 0, 0);
+    background: linear-gradient(169deg, rgba(119,231,88,0.7008053221288515) 0%, rgba(37,99,235,0.9332983193277311) 28%, rgba(75,231,71,0.7736344537815126) 100%);
+    }
+
+  .cont{
+    height: 620px;
+  }
+
+  .bloque{
+    background: linear-gradient(165deg, rgba(132,71,240,0.8380602240896359) 0%, rgba(210,87,226,0.9641106442577031) 100%);
+    opacity: 0.8;
+  }
