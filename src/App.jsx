@@ -6,19 +6,26 @@ import Contacto from './pages/Contacto';
 import Error from './pages/Error';
 import Servicios from './pages/Servicios'
 import Index from './pages/Index';
+import Facebook from './pages/Facebook'
+import Libreria from './pages/Libreria';
+import GitHub from './pages/Github'
 
 function App() {
+
   return (
     <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<Index/>} />
-      <Route path='/registro' element={<Registro/>} />
-      <Route path='/login' element={<Login/>} />
-      <Route path='/nosotros' element={<Nosotros/>} />
-      <Route path='/contacto' element={<Contacto/>} />
-      <Route path='/servicios' element={<Servicios/>} />
-      <Route path='*' element={<Error/>} />
-    </Routes>
+      <Routes>
+        <Route path='/' element={<Login />} />
+        <Route path='/home' element={<Index />} />
+        <Route path='/face' element={<Facebook />} />
+        <Route path='/registro' element={<Registro />} />
+        <Route path='/git' element={<GitHub />} />
+        <Route path='/nosotros' element={<Nosotros />} />
+        <Route path='/contacto' element={<Contacto />} />
+        <Route path='/servicios' element={<Servicios />} />
+        <Route path='/libreria' element={<Libreria />} />
+        <Route path='*' element={<Error />} />
+      </Routes>
     </BrowserRouter>
   );
 }

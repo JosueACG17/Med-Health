@@ -2,18 +2,27 @@ import React, { useState } from 'react';
 import imagen from "../img/header.png";
 import logo from "../img/logo.png"
 import "../styles/header.css"
-import { FaHome, FaUsers, FaBriefcase, FaEnvelope } from 'react-icons/fa';
+import { FaHome, FaUsers, FaBriefcase, FaEnvelope, FaSignOutAlt } from 'react-icons/fa';
 import { googleLogout } from '@react-oauth/google';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [facebookUser, setFacebookUser] = useState(JSON.parse(localStorage.getItem('facebookUser')) || {});
   const [profile, setProfile] = useState(JSON.parse(localStorage.getItem('userProfile')) || {});
 
+  {/*CERRAR SESION GOOGLE */ }
   const logOut = () => {
     googleLogout();
     localStorage.removeItem('userProfile');
     setProfile([]);
   };
+
+  {/*CERRAR SESION FACEBOOK */ }
+
+  const cerrarsesion = () => {
+    localStorage.removeItem('facebookUser');
+    setFacebookUser({});
+  }
 
   return (
     <>
@@ -30,7 +39,7 @@ function Header() {
                 <span className="sr-only">Open Menu</span>
               </button>
             </div>
-            <a href="/" title="Kutty Home Page" className="flex items-center">
+            <a href="/home" title="Kutty Home Page" className="flex items-center">
               <img className="w-auto h-6" src={logo} alt="Logo" />
               <span className="ml-2 text-black font-bold uppercase font-sans">Med-Health</span>
             </a>
@@ -43,21 +52,35 @@ function Header() {
                 onClick={() => setIsOpen(!isOpen)}
               >
                 <span className="sr-only">Menu</span>
-                <img alt="Man" src={profile.picture || imagen} className="h-10 w-10 rounded-full object-cover" />
+                <img alt="Perfil" src={profile.picture || imagen || facebookUser.picture} className="h-10 w-10 rounded-full object-cover" />
                 <p className="ms-2 hidden text-left text-xs sm:block">
-                  <strong className="block font-medium">{profile.name}</strong>
-                  <span className="text-gray-700">{profile.email}</span>
+                  <strong className="block font-medium text-base	">{profile.name || facebookUser.name}</strong>
                 </p>
-                <svg xmlns="http://www.w3.org/2000/svg" className="ms-4 hidden h-5 w-5 text-gray-500 transition group-hover:text-gray-700 sm:block" viewBox="0 0 20 20" fill="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="ms-4  h-5 w-5 text-gray-500 transition group-hover:text-gray-700 sm:block" viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                 </svg>
 
                 {isOpen && (
-                  <div className="origin-top-right absolute right-0 mt-32 w-56 bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg overflow-hidden">
-                    <a href="#" className="block px-4 py-2 text-sm text-gray-800 hover:bg-blue-800 hover:text-white">Perfil</a>
-                    <a href="/login" className="block px-4 py-2 text-sm text-gray-800 hover:bg-blue-800 hover:text-white" onClick={logOut}>Cerrar Sesión</a>
-                  </div>
 
+                  <div className="origin-top-right bg-white absolute mt-80 w-80 rounded-md shadow-lg overflow-hidden" style={{ right: 0, overflowX: 'auto', zIndex: 2 }}>
+                    <div className="text-center text-white font-semibold">
+                      ¡Bienvenido, {profile.given_name}!
+                    </div>
+                    <img className="ml-28 rounded-lg mb-1" src={profile.picture || imagen} alt="user image" />
+                    <p className='text-blue-800 font-semibold'>Nombre:</p>
+                    <p className='font-medium'>{profile.name}</p>
+                    <p className='text-blue-800 font-semibold'>Correo Electrónico:</p>
+                    <p className='mb-1 font-medium '>{profile.email}</p>
+                    <a
+                      href="/"
+                      onClick={() => { logOut(); cerrarsesion(); }}
+
+                      className="block px-4 py-2 text-white text-sm bg-red-600 hover:bg-sky-700 hover:text-white"
+                    >
+                      <FaSignOutAlt className="icono" />
+                      <span className="text">Cerrar Sesión</span>
+                    </a>
+                  </div>
                 )}
               </button>
             </div>
@@ -66,7 +89,7 @@ function Header() {
         </div>
       </header>
       <nav className="w-full h-full flex items-center justify-center bg-blue-800">
-        <a className="py-4 m-0 tab-link font-bold text-white hover:text-yellow-500" href="/"><span><FaHome className="icon" /> Home</span></a>
+        <a className="py-4 m-0 tab-link font-bold text-white hover:text-yellow-500" href="/home"><span><FaHome className="icon" /> Home</span></a>
         <a className="py-4 m-0 tab-link font-bold text-white hover:text-yellow-500" href="/nosotros"><span><FaUsers className="icon" /> Nosotros</span></a>
         <a className="py-4 m-0 tab-link font-bold text-white hover:text-yellow-500" href="/servicios"><span><FaBriefcase className="icon" /> Servicios</span></a>
         <a className="py-4 m-0 tab-link font-bold text-white hover:text-yellow-500" href="/contacto"><span><FaEnvelope className="icon" /> Contacto</span></a>

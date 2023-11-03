@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer"
+import emailjs from '@emailjs/browser';
 
 function Contacto() {
+    const form = useRef();
+    const [showSuccessAlert, setShowSuccessAlert] = useState(false);
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_tr9uwlb', 'template_m1mfhzv', form.current, '5KLRbPoqlMH7vLZTx')
+            .then((result) => {
+                console.log(result.text);
+                console.log("message sent");
+                setShowSuccessAlert(true); // Mostrar la alerta de éxito
+                form.current.reset(); // Limpiar los campos del formulario
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+
     return (
         <>
             <Header></Header>
@@ -75,41 +93,91 @@ function Contacto() {
                                 </div>
                             </div>
                             <div className="mt-8 lg:w-1/2 lg:mx-6 ">
-                                <div className="w-full px-8 py-10 mx-auto overflow-hidden bg-white shadow-2xl rounded-xl dark:bg-gray-900 lg:max-w-xl">
-                                    <form className="mt-1">
+                                <div className="w-full px-8 py-5 mx-auto overflow-hidden bg-white shadow-2xl rounded-xl  lg:max-w-xl">
+                                    <div role="alert" className={`rounded-xl  bg-white   p-2 ${showSuccessAlert ? 'block' : 'hidden'}`}>
+                                        <div className="flex items-start gap-4">
+                                            <span className="text-green-600">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    fill="none"
+                                                    viewBox="0 0 24 24"
+                                                    strokeWidth="1.5"
+                                                    stroke="currentColor"
+                                                    className="h-6 w-6"
+                                                >
+                                                    <path
+                                                        strokeLinecap="round"
+                                                        strokeLinejoin="round"
+                                                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                                    />
+                                                </svg>
+                                            </span>
+                                            <div className="flex-1">
+                                                <strong className="block font-medium text-gray-900"> Mensaje enviado correctamente</strong>
+                                                <p className="mt-1 text-sm text-blue-800">
+                                                    Tu mensaje ha sido recibido.
+                                                </p>
+                                            </div>
+                                            <button className="text-red-600 transition hover:text-white hover:bg-black" onClick={() => setShowSuccessAlert(false)}>
+                                                <span className="sr-only">Cerrar la alerta</span>
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    fill="none"
+                                                    viewBox="0 0 24 24"
+                                                    strokeWidth="1.5"
+                                                    stroke="currentColor"
+                                                    className="h-6 w-6"
+                                                >
+                                                    <path
+                                                        strokeLinecap="round"
+                                                        strokeLinejoin="round"
+                                                        d="M6 18L18 6M6 6l12 12"
+                                                    />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <form ref={form} onSubmit={sendEmail} className="mt-3">
                                         <div className="flex-1">
-                                            <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
-                                                Nombre Completo
+                                            <label className="block mb-2 text-sm font-semibold text-black ">
+                                                Nombre Completo:
                                             </label>
                                             <input
                                                 type="text"
+                                                name="user_name"
                                                 placeholder="Rafael Mendoza"
-                                                className="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                                                className="block w-full px-5 py-3 mt-2 text-semibold text-black bg-white border border-gray-500 rounded-md  focus:border-blue-600 focus:ring-blue-500 focus:ring-opacity-40 dark:focus:border-blue-700 focus:outline-none focus:ring"
                                             />
                                         </div>
                                         <div className="flex-1 mt-6">
-                                            <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
-                                                Correo Electronico
+                                            <label className="block mb-2 text-sm font-semibold text-black">
+                                                Correo Electronico:
                                             </label>
                                             <input
                                                 type="email"
+                                                name="user_email"
                                                 placeholder="correoprueba@gmail.com"
-                                                className="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                                                className="block w-full px-5 py-3 mt-2 text-semibold text-black bg-white border border-gray-500 rounded-md  focus:border-blue-600 focus:ring-blue-500 focus:ring-opacity-40 dark:focus:border-blue-700 focus:outline-none focus:ring"
                                             />
                                         </div>
                                         <div className="w-full mt-6">
-                                            <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
-                                                Mensaje
+                                            <label className="block mb-2 text-sm font-semibold text-black">
+                                                Mensaje:
                                             </label>
                                             <textarea
-                                                className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                                                name="message"
+                                                className="block w-full h-32 px-5 py-3 mt-2 text-semibold text-black placeholder-gray-400 bg-white border border-gray-500 rounded-md md:h-48  focus:border-blue-400 focus:ring-blue-500 focus:ring-opacity-40 dark:focus:border-blue-700 focus:outline-none focus:ring"
                                                 placeholder="Mensaje"
                                                 defaultValue={""}
                                             />
                                         </div>
-                                        <button className="w-full px-6 py-3 mt-6 text-sm font-bold tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50">
+                                        <button
+                                            type="submit"
+                                            value="Send"
+                                            className="w-full px-6 py-3 mt-6 text-sm font-bold tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50">
                                             Enviar
                                         </button>
+
                                     </form>
                                 </div>
                             </div>
@@ -117,7 +185,6 @@ function Contacto() {
                     </div>
                 </div>
             </section>
-
             {/* MAPA DEL LUGAR */}
 
             <section className="bg-white opacity-90" style={{
@@ -235,3 +302,4 @@ function Contacto() {
 }
 
 export default Contacto;
+

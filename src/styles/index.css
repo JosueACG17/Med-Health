@@ -4,12 +4,12 @@
       radial-gradient(30px,#000 98%,#0000) bottom/55.50px 60px;
     -webkit-mask: var(--mask);
             mask: var(--mask);
-            background-color: #93dfff;
+            background-color: #4c9de3;
   }
 
   .color{
     background: rgb(0, 0, 0);
-    background: linear-gradient(169deg, rgba(119,231,88,0.7008053221288515) 0%, rgba(37,99,235,0.9332983193277311) 28%, rgba(75,231,71,0.7736344537815126) 100%);
+    background: linear-gradient(169deg, rgba(70, 39, 243, 0.701) 0%, rgba(29, 98, 209, 0.933) 28%, rgba(56, 149, 196, 0.774) 100%);
     }
 
   .cont{
@@ -17,6 +17,13 @@
   }
 
   .bloque{
-    background: linear-gradient(165deg, rgba(132,71,240,0.8380602240896359) 0%, rgba(210,87,226,0.9641106442577031) 100%);
+    background: #a2bdfc;;
+    border-color: black ;
     opacity: 0.8;
+    
+  }
+
+  .icon-list {
+    list-style-type: disc; /* Puedes cambiar 'disc' al estilo de viñeta que prefieras */
+    margin-left: 20px; /* Espacio izquierdo para dar espacio al icono */
   }

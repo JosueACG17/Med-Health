@@ -1,332 +1,196 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 import Header from "../components/Header";
-import Imagen from "../img/reloj.png";
+import Footer from "../components/Footer";
+import { FaHome, FaUsers, FaBriefcase, FaEnvelope } from 'react-icons/fa';
+
 
 function Servicios() {
     return (
         <div>
             <Header></Header>
-            <div className="grid grid-cols-1 gap-4 lg:grid-cols-[120px_1fr] lg:gap-8">
-                <div className="h-100% rounded-lg bg-gray-200 w-fit">
-                    <div>
-                        <ul className="flex flex-col space-y-2">
-                            <li>
-                                <strong className="block text-xs font-medium uppercase text-gray-400">
-                                    General
-                                </strong>
-                                <ul className="mt-2 space-y-1">
-                                    <li>
-                                        <a
-                                            href=""
-                                            className="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
-                                        >
-                                            Perfil
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href=""
-                                            className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-                                        >
-                                            Cursos
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href=""
-                                            className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-                                        >
-                                            Libros
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href=""
-                                            className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-                                        >
-                                            Citas
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href=""
-                                            className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-                                        >
-                                            Calendario
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <strong className="block text-xs font-medium uppercase text-gray-400">
-                                    Soporte Técnico
-                                </strong>
-                                <ul className="mt-2 space-y-1">
-                                    <li>
-                                        <a
-                                            href=""
-                                            className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-                                        >
-                                            Actualizaciones
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href=""
-                                            className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-                                        >
-                                            Ayuda
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href=""
-                                            className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-                                        >
-                                            Configuración
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <strong className="block text-xs font-medium uppercase text-gray-400">
-                                    Perfil
-                                </strong>
-                                <ul className="mt-2 space-y-1">
-                                    <li>
-                                        <a
-                                            href=""
-                                            className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-                                        >
-                                            Detalles
-                                        </a>
-                                    </li>
-                                    <li>
-                                    </li>
-                                    <li>
-                                        <form action="/logout">
-                                            <button
-                                                type="submit"
-                                                className="block w-full rounded-lg px-4 py-2 text-sm font-medium text-gray-500 [text-align:_inherit] hover:bg-gray-100 hover:text-gray-700"
-                                            >
-                                                Salir
-                                            </button>
-                                        </form>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+            <div className="relative mt-0 flex flex-col-reverse py-12 lg:pt-0 lg:flex-col lg:pb-0" style={{ zIndex: 1 }}>
+                <div className="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0 " >
+                    <svg
+                        className="absolute left-0 hidden h-full text-white transform -translate-x-1/2 lg:block"
+                        viewBox="0 0 100 100"
+                        fill="currentColor"
+                        preserveAspectRatio="none slice"
+                    >
+                        <path d="M50 0H100L50 100H0L50 0Z" />
+                    </svg>
+                    <img
+                        className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
+                        style={{ zIndex: 1 }}
+                        src="https://images.pexels.com/photos/4031818/pexels-photo-4031818.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt=""
+                    />
+                </div>
+                <div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
+                    <div className="mb-12 lg:my-40 lg:max-w-lg lg:pr-5">
+                        <h2 className="mb-5 font-sans text-3xl text-center font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                            Conoce nuestros
+                            <br className="hidden md:block" />
+                            {' '}
+                            <span className="inline-block underline text-deep-purple-accent-700">
+                                Servicios
+                            </span>
+                        </h2>
+                        <p className="pr-5 mb-5 text-sm text-justify text-gray-700 md:text-lg">
+                            En Med-Health nos preocupamos por todos nuestros usuarios y procuramos entregarles los mejores servicios, para atención médica y psicológica, por lo que tenemos una actitud de servicio en pro del bienestar de los derechoambientes, para esto ofrecemos los siguientes servicios:
+                        </p>
                     </div>
                 </div>
-                <div className="h-fit rounded-lg bg-gray-200 inline-block flex items-center justify-content: flex-start align-items: flex-end">
-                    <img src={Imagen} className="object-scale-down object-center w-24 h-24 md:object-top ml-5" alt="Imagen"></img>
-                    <div className="divbotones mb-3 md:ml-8 md:mb-0">
+            </div>
 
-                        <div className="button-container flex-grow-1 w-full">
-                            <button
-                                type="button"
-                                className="list-group-item list-group-item-action w-full md:w-80 rounded-lg relative inline-flex items-center p-0.5 mb-2 mr-2 ml-2 overflow-hidden text-sm font-medium text-gray-900 group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus-ring-blue-800"
-                            >
-                                <span className="relative px-2 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                                    Lunes 10:00 a 20:30
-                                </span>
-                            </button>
-                        </div>
-                        <div className="button-container flex-grow-1 w-full">
-                            <button
-                                type="button"
-                                className="list-group-item list-group-item-action w-full md:w-80 rounded-lg relative inline-flex items-center p-0.5 mb-2 mr-2 ml-2 overflow-hidden text-sm font-medium text-gray-900 group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus-ring-blue-800"
-                            >
-                                <span className="relative px-2 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                                    Martes - Viernes 10:00 a 18:30
-                                </span>
-                            </button>
-                        </div>
-                        <div className="button-container flex-grow-1 w-full">
-                            <button
-                                type="button"
-                                className="list-group-item list-group-item-action w-full md:w-80 rounded-lg relative inline-flex items-center p-0.5 mb-2 mr-2 ml-2 overflow-hidden text-sm font-medium text-gray-900 group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus-ring-blue-800"
-                            >
-                                <span className="relative px-2 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                                    Sábado - Domingo 10:00 a 15:00                                </span>
-                            </button>
-                        </div>
-                    </div>
+            {/* Breadcrumb */}
+            <div class="mt-7 ">
+                <div class="container flex items-center px-6 py-4 mx-auto overflow-x-auto whitespace-nowrap">
 
-                    <section>
-                        <div className=" flex flex-col items-center px-5 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                            <div className="flex flex-col w-full max-w-3xl mx-auto prose text-left prose-blue">
-                                <div className="w-full mx-auto">
-                                    <h1 className="text-4xl italic font-semibold">Med Healt siempre enfocado en la experiencia de sus usuarios.</h1>
-                                    <br></br>
-                                    <h2>Para nuestro equipo usted es lo más importante.</h2>
-                                    <p>
-                                        Buscamos darle a todos nuestros usuarios una experiencia única y un espacio en dónde se sienta cómodos de hablar con nuestros especialistas y con otros usuarios, usando las mejores tecnologías para brindarle la seguridad y privacidad que se merecen.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="flex flex-col items-center pb-10 mx-auto my-10 border-b border-gray-200 max-w-7xl sm:flex-row">
-                                <div className="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 text-neutral-600 rounded-full bg-gray-50 sm:mr-10">
-                                    <svg
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="1.5"
-                                        className="w-10 h-10"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <circle cx={12} cy={12} r={9} />
-                                        <line x1="3.6" y1={15} x2="14.15" y2={15} />
-                                        <line
-                                            x1="3.6"
-                                            y1={15}
-                                            x2="14.15"
-                                            y2={15}
-                                            transform="rotate(72 12 12)"
-                                        />
-                                        <line
-                                            x1="3.6"
-                                            y1={15}
-                                            x2="14.15"
-                                            y2={15}
-                                            transform="rotate(144 12 12)"
-                                        />
-                                        <line
-                                            x1="3.6"
-                                            y1={15}
-                                            x2="14.15"
-                                            y2={15}
-                                            transform="rotate(216 12 12)"
-                                        />
-                                        <line
-                                            x1="3.6"
-                                            y1={15}
-                                            x2="14.15"
-                                            y2={15}
-                                            transform="rotate(288 12 12)"
-                                        />
-                                    </svg>
-                                </div>
-                                <div className="flex-grow mt-6 prose text-center sm:text-left sm:mt-0 prose-md">
-                                    <h2>Nuestra Libreria.</h2>
-                                    <p>
-contamos con una amplía gama de libros relacionados a temas de la salud, tanto física, como mental, los cuáles son compleamente gratuitos para todos nuestros usuarios
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="flex flex-col items-center pb-10 mx-auto my-10 border-b border-gray-200 max-w-7xl sm:flex-row">
-                                <div className="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 text-neutral-600 rounded-full bg-gray-50 sm:mr-10">
-                                    <svg
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="1.5"
-                                        className="w-10 h-10"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <circle cx={12} cy={12} r={9} />
-                                        <line x1="3.6" y1={15} x2="14.15" y2={15} />
-                                        <line
-                                            x1="3.6"
-                                            y1={15}
-                                            x2="14.15"
-                                            y2={15}
-                                            transform="rotate(72 12 12)"
-                                        />
-                                        <line
-                                            x1="3.6"
-                                            y1={15}
-                                            x2="14.15"
-                                            y2={15}
-                                            transform="rotate(144 12 12)"
-                                        />
-                                        <line
-                                            x1="3.6"
-                                            y1={15}
-                                            x2="14.15"
-                                            y2={15}
-                                            transform="rotate(216 12 12)"
-                                        />
-                                        <line
-                                            x1="3.6"
-                                            y1={15}
-                                            x2="14.15"
-                                            y2={15}
-                                            transform="rotate(288 12 12)"
-                                        />
-                                    </svg>
-                                </div>
-                                <div className="flex-grow mt-6 prose text-center sm:text-left sm:mt-0 prose-md">
-                                    <h2>Short length headline.</h2>
-                                    <p>
-                                        Free and Premium themes, UI Kit's, templates and landing pages built
-                                        with Tailwind CSS, HTML &amp; Next.js.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="flex flex-col items-center pb-10 mx-auto my-10 border-b border-gray-200 max-w-7xl sm:flex-row">
-                                <div className="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 text-neutral-600 rounded-full bg-gray-50 sm:mr-10">
-                                    <svg
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="1.5"
-                                        className="w-10 h-10"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <circle cx={12} cy={12} r={9} />
-                                        <line x1="3.6" y1={15} x2="14.15" y2={15} />
-                                        <line
-                                            x1="3.6"
-                                            y1={15}
-                                            x2="14.15"
-                                            y2={15}
-                                            transform="rotate(72 12 12)"
-                                        />
-                                        <line
-                                            x1="3.6"
-                                            y1={15}
-                                            x2="14.15"
-                                            y2={15}
-                                            transform="rotate(144 12 12)"
-                                        />
-                                        <line
-                                            x1="3.6"
-                                            y1={15}
-                                            x2="14.15"
-                                            y2={15}
-                                            transform="rotate(216 12 12)"
-                                        />
-                                        <line
-                                            x1="3.6"
-                                            y1={15}
-                                            x2="14.15"
-                                            y2={15}
-                                            transform="rotate(288 12 12)"
-                                        />
-                                    </svg>
-                                </div>
-                                <div className="flex-grow mt-6 prose text-center sm:text-left sm:mt-0 prose-md">
-                                    <h2>Short length headline.</h2>
-                                    <p>
-                                        Free and Premium themes, UI Kit's, templates and landing pages built
-                                        with Tailwind CSS, HTML &amp; Next.js.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                    <a href="#" class="flex items-center text-blue-700 font-bold -px-2 hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                        </svg>
 
+                        <span class="mx-2">Servicios</span>
+                    </a>
 
                 </div>
+            </div>
+
+            {/*SEGUNDO HEADER */}
+
+            <div className="mx-auto max-w-3xl text-center">
+                <h1
+                    className="bg-gradient-to-r from-cyan-800 via-blue-700 to-purple-700 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl"
+                >
+                    Descubre Todo Lo Que
+
+                    <span className="sm:block"> Puedes Encontrar</span>
+                </h1>
+
+                <p className="mx-auto mt-4 text-justify max-w-xl sm:text-lg/relaxed">
+                    Descubre una gama de servicios diseñados para cubrir tus necesidades.
+                    Explora nuestros servicios y encuentra soluciones a medida que te harán la vida más conveniente y eficiente.
+                </p>
 
             </div>
+
+            {/*CARTAS */}
+            <section className="text-gray-600 body-font text-justify">
+                <div className="container px-5 py-10 mx-auto">
+                    <div className="flex flex-wrap w-full mb-8">
+                        <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
+                        </div>
+
+                        <div className="flex flex-wrap -m-4">
+
+                            <div className="xl:w-1/2 md:w-1/2 p-4">
+                                <div className="bg-gray-100 p-6 rounded-lg">
+                                    <a
+                                        href="/libreria"
+                                        className="flex flex-col items-center bg-blue-700 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 hover:bg-violet-900"
+                                    >
+                                        <img
+                                            className="object-cover w-full rounded-t-lg h-92 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                                            src="https://images.pexels.com/photos/8199629/pexels-photo-8199629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            alt=""
+                                        />
+                                        <div className="flex flex-col justify-between p-4 leading-normal">
+                                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                                Nuestra Librería
+                                            </h5>
+                                            <p className="mb-3 font-normal text-gray-900 dark:text-white">
+                                                En este apartado de nuestros servicios, ofrecemos a todos nuestros usuarios,
+                                                la oportunidad de acceder de manera completamente gratuita a nuestra libreria,
+                                                para que se sientan libres de leer los libros que necesiten, contando con una amplía gama de libros para fomentar la auto ayuda y el auto descubrimiento.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div className="xl:w-1/2 md:w-1/2 p-4">
+                                <div className="bg-gray-100 p-6 rounded-lg">
+                                    <a
+                                        href="#"
+                                        className="flex flex-col items-center bg-blue-700 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl  dark:border-gray-700 hover:bg-violet-900"
+                                    >
+                                        <img
+                                            className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                                            src="https://images.pexels.com/photos/8199629/pexels-photo-8199629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            alt=""
+                                        />
+                                        <div className="flex flex-col justify-between p-4 leading-normal">
+                                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                                Nuestra Librería
+                                            </h5>
+                                            <p className="mb-3 font-normal text-gray-700 dark:text-white">
+                                                En este apartado de nuestros servicios, ofrecemos a todos nuestros usuarios,
+                                                la oportunidad de acceder de manera completamente gratuita a nuestra libreria,
+                                                para que se sientan libres de leer los libros que necesiten, contando con una amplía gama de libros para fomentar la auto ayuda y el auto descubrimiento.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div className="xl:w-1/2 md:w-1/2 p-4">
+                                <div className="bg-gray-100 p-6 rounded-lg">
+                                    <a
+                                        href="#"
+                                        className="flex flex-col items-center bg-blue-700 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl  dark:border-gray-700 hover:bg-violet-900"
+                                    >
+                                        <img
+                                            className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                                            src="https://images.pexels.com/photos/8199629/pexels-photo-8199629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            alt=""
+                                        />
+                                        <div className="flex flex-col justify-between p-4 leading-normal">
+                                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                                Nuestra Librería
+                                            </h5>
+                                            <p className="mb-3 font-normal text-gray-700 dark:text-white">
+                                                En este apartado de nuestros servicios, ofrecemos a todos nuestros usuarios,
+                                                la oportunidad de acceder de manera completamente gratuita a nuestra libreria,
+                                                para que se sientan libres de leer los libros que necesiten, contando con una amplía gama de libros para fomentar la auto ayuda y el auto descubrimiento.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div className="xl:w-1/2 md:w-1/2 p-4">
+                                <div className="bg-gray-100 p-6 rounded-lg">
+                                    <a
+                                        href="#"
+                                        className="flex flex-col items-center bg-blue-700 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 hover:bg-violet-900"
+                                    >
+                                        <img
+                                            className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                                            src="https://images.pexels.com/photos/8199629/pexels-photo-8199629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            alt=""
+                                        />
+                                        <div className="flex flex-col justify-between p-4 leading-normal">
+                                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                                Nuestra Librería
+                                            </h5>
+                                            <p className="mb-3 font-normal text-gray-700 dark:text-white">
+                                                En este apartado de nuestros servicios, ofrecemos a todos nuestros usuarios,
+                                                la oportunidad de acceder de manera completamente gratuita a nuestra libreria,
+                                                para que se sientan libres de leer los libros que necesiten, contando con una amplía gama de libros para fomentar la auto ayuda y el auto descubrimiento.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <Footer></Footer>
 
         </div>
     )

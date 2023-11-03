@@ -8,3 +8,24 @@
 .icon {
   margin-right: 7px; /* Ajusta este valor según tus necesidades */
 }
+
+.icono {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px; /* Ajusta el espacio entre el icono y el texto según tus preferencias */
+}
+
+.text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.origin-top-right {
+  background: linear-gradient(180deg, rgb(96, 132, 250)30%, white 30%);
+  position: absolute;
+  margin-top: 80px;
+  width: 80px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
