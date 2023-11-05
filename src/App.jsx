@@ -6,9 +6,7 @@ import Contacto from './pages/Contacto';
 import Error from './pages/Error';
 import Servicios from './pages/Servicios'
 import Index from './pages/Index';
-import Facebook from './pages/Facebook'
 import Libreria from './pages/Libreria';
-import GitHub from './pages/Github'
 
 function App() {
 
@@ -17,9 +15,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Login />} />
         <Route path='/home' element={<Index />} />
-        <Route path='/face' element={<Facebook />} />
         <Route path='/registro' element={<Registro />} />
-        <Route path='/git' element={<GitHub />} />
         <Route path='/nosotros' element={<Nosotros />} />
         <Route path='/contacto' element={<Contacto />} />
         <Route path='/servicios' element={<Servicios />} />

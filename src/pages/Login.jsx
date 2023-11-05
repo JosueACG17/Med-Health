@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import imagen from "../img/doctoraa.png"
 import "../styles/login.css";
-import { FaEye, FaEyeSlash, FaGithub } from 'react-icons/fa';
-import { FcGoogle} from "react-icons/fc";
-import { useGoogleLogin } from '@react-oauth/google';
-import axios from "axios";
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import BGoogle from '../components/BGoogle';
+import BGithub from '../components/BGithub';
+import BFacebook from '../components/BFacebook'
 
 function Login() {
     const text = "Bienvenido a            Med-Health";
@@ -29,54 +29,6 @@ function Login() {
         e.preventDefault();
         setShowPassword(!showPassword);
     }
-
-    const [user, setUser] = useState([]);
-    const [profile, setProfile] = useState(JSON.parse(localStorage.getItem('userProfile')) || []);
-
-    const login = useGoogleLogin({
-        onSuccess: (codeResponse) => setUser(codeResponse),
-        onError: (error) => console.log('Login Failed:', error)
-    });
-
-    useEffect(() => {
-        if (user) {
-            axios
-                .get(`https://www.googleapis.com/oauth2/v1/userinfo?access_token=${user.access_token}`, {
-                    headers: {
-                        Authorization: `Bearer ${user.access_token}`,
-                        Accept: 'application/json'
-                    }
-                })
-                .then((res) => {
-                    const userProfile = res.data;
-                    setProfile(userProfile);
-                    localStorage.setItem('userProfile', JSON.stringify(userProfile));
-                })
-                .catch((err) => console.log(err));
-        }
-    }, [user]);
-
-    useEffect(() => {
-        if (profile && profile.name && profile.email) {
-            window.location.href = '/home';
-        }
-    }, [profile]);
-
-    {/*INICIO DE SESION CON FACEBOOK */ }
-    const [facebookUser, setFacebookUser] = useState(JSON.parse(localStorage.getItem('facebookUser')) || {});
-    const respuestaFacebook = (response) => {
-        console.log(response);
-        if (response.status !== 'unknown') {
-            setFacebookUser(response);
-            localStorage.setItem('facebookUser', JSON.stringify(response));
-        }
-    }
-
-    useEffect(() => {
-        if (facebookUser && facebookUser.name && facebookUser.email) {
-            window.location.href = '/home';
-        }
-    }, [facebookUser]);
 
     return (
         <>
@@ -119,18 +71,18 @@ function Login() {
                         </ul>
                     </div>
 
-                    <div className="md:flex md:items-center w-full md:justify-center sm:w-auto md:h-full w-2/5 xl:w-2/5 p-8  md:p-10 lg:p-10 sm:rounded-lg md:rounded-none bg-white ">
-                        <div className="max-w-md w-full space-y-9 mr-10">
+                    <div className="md:flex md:items-center w-full md:justify-center sm:w-auto md:h-full xl:w-2/5 p-8  md:p-10 lg:p-10 sm:rounded-lg md:rounded-none bg-white ">
+                        <div className="max-w-md w-full mr-10">
                             <div className="text-center">
                                 <h2 className="text-3xl font-bold text-blue-900 font-serif">
                                     Inicia Sesión
                                 </h2>
                             </div>
 
-                            <form className="mt-8 space-y-6" action="#" method="POST">
+                            <form className="mt-4 space-y-5" action="#" method="POST">
                                 <input type="hidden" name="remember" defaultValue="true" />
                                 <div className="relative">
-                                    <label className="ml-3 text-sm font-bold text-gray-700 tracking-wide">
+                                    <label className="ml-3 text-sm font-bold text-gray-800 tracking-wide">
                                         Correo Electrónico:
                                     </label>
                                     <div className="relative">
@@ -147,8 +99,8 @@ function Login() {
                                 </div>
 
 
-                                <div className="mt-4">
-                                    <label className="text-sm font-bold text-gray-700 tracking-wide">
+                                <div className="mt-6">
+                                    <label className="text-sm font-bold text-gray-800 tracking-wide">
                                         Contraseña:
                                     </label>
                                     <div className="relative">
@@ -184,64 +136,34 @@ function Login() {
                                         </label>
                                     </div>
                                     <div className="text-sm">
-                                        <a href="/registro" className="text-indigo-400 hover:text-black">
+                                        <a href="/registro" className="text-indigo-400 hover:text-black font-semibold">
                                             No tienes cuenta? Registrate
                                         </a>
                                     </div>
                                 </div>
-                                <div>
+                                <div >
                                     <button
                                         type="submit"
-                                        className="w-full flex justify-center bg-gradient-to-r from-indigo-500 to-blue-600  hover:bg-gradient-to-l hover:from-blue-500 hover:to-cyan-500 text-gray-100 p-4  rounded-full tracking-wide font-semibold  shadow-lg cursor-pointer transition ease-in duration-500 font-sans"
+                                        className="w-full flex justify-center bg-gradient-to-r from-indigo-500 to-blue-600 hover:bg-gradient-to-l hover:from-blue-800 hover:to-cyan-800 text-gray-100  p-4 md:p-3 rounded-full tracking-wide font-semibold shadow-lg cursor-pointer transition ease-in duration-500 font-sans"
                                     >
                                         Iniciar Sesión
                                     </button>
-                                </div>
-                                <div className="flex items-center justify-center space-x-2">
-                                    <span className="h-px w-20 bg-black" />
-                                    <span className="font-normal text-black">O continuar con</span>
-                                    <span className="h-px w-20 bg-black" />
-                                </div>
-                                <div className="flex justify-center space-x-6">
-                                    <div>
-                                        <button
-                                            type="submit"
-                                            onClick={() => login()}
-                                            className="w-full items-center block px-12 py-2.5 text-base font-medium text-center bg-white text-blue-700 transition duration-500 ease-in-out transform border-2 border-gray shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 hover:bg-black hover:text-white"
-                                        >
-                                            <div className="flex items-center justify-center">
-                                                <FcGoogle></FcGoogle>
-                                                <span className="ml-4">
-                                                    <font style={{ verticalAlign: "inherit" }}>
-                                                        <font style={{ verticalAlign: "inherit" }}>
-                                                            Google
-                                                        </font>
-                                                    </font>
-                                                </span>
-                                            </div>
-                                        </button>
-                                    </div>
-                                    <div>
-                                        {/*ICONO DE GITHUB */}
-                                        <div>
-                                            <button
-                                                type="submit"
-                                                className="w-full items-center block px-12 py-2.5 text-base font-medium text-center bg-black  text-white transition duration-500 ease-in-out transform border-2 border-gray shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 hover:bg-orange-900 hover:text-white"
-                                            >
-                                                <div className="flex items-center justify-center">
-                                                    <FaGithub></FaGithub>
-                                                    <span className="ml-4">
-                                                        <font style={{ verticalAlign: "inherit" }}>
-                                                            <font style={{ verticalAlign: "inherit" }}>
-                                                                GitHub
-                                                            </font>
-                                                        </font>
-                                                    </span>
-                                                </div>
-                                            </button>
-                                        </div>
 
-                                    </div>
+                                </div>
+                                <div className="flex items-center justify-center space-x-3">
+                                    <span className="h-px w-28 bg-black" />
+                                    <span className="font-semibold text-black">O continuar con</span>
+                                    <span className="h-px w-28 bg-black" />
+                                </div>
+                                <div className="justify-center ">
+                                    {/* BOTON DE GOOGLE */}
+                                    <BGoogle></BGoogle>
+                                    {/*BOTON DE GITHUB */}
+                                    <BGithub></BGithub>
+
+                                    {/*BOTON DE MICROSOFT */}
+
+                                    <BFacebook></BFacebook>
                                 </div>
                             </form>
                         </div>

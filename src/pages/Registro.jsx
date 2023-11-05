@@ -88,7 +88,7 @@ function Registro() {
                     </button>
                   </Link>
                 </div>
-                <p className="flex flex-col items-center justify-center mt-10 text-center text-md text-gray-500">
+                <p className="flex flex-col items-center justify-center mt-10 font-bold text-center text-md text-gray-700">
                   <span>¿Ya tienes una cuenta?</span>
                   <Link to="/" className="text-blue-700 hover:text-black no-underline hover: cursor-pointer transition ease-in duration-300"> Inicia Sesión</Link>
                 </p>

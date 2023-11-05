@@ -35,7 +35,7 @@ const Modal = ({ show, item, onClose }) => {
             <h3 className="text-lg text-indigo-600">{item.volumeInfo.authors}</h3>
             <h4 className="text-base text-gray-600">{item.volumeInfo.publisher}<span className="ml-2 text-gray-400">{item.volumeInfo.publishedDate}</span></h4>
             <a href={item.volumeInfo.previewLink} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block bg-indigo-500 text-white rounded-full px-6 py-2 hover:bg-indigo-700 transition duration-300 ease-in-out">
-              More
+              Ver Más
             </a>
           </div>
           <p className="text-gray-700 text-lg mt-4">{truncatedDescription}</p>

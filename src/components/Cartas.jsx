@@ -52,7 +52,7 @@ function Cartas(){
                     const cardAnimation = useSpring({
                         opacity: isVisible ? 1 : 0,
                         transform: isVisible ? "translateY(0)" : "translateY(50px)",
-                        config: { duration: 200 },
+                        config: { duration: 300 },
                     });
 
                     return (

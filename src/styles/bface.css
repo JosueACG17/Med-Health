@@ -1,0 +1,25 @@
+/* Estilos para el botón Facebook */
+.iconoface {
+  background-color: white;
+  color: #1877f2; 
+  border: 2px solid #afafaf;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  height: 39px;
+  width: 100%;
+  cursor: pointer;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.iconoface:hover {
+  background-color: black;
+  color: white;
+}
+
+.iconoface .fa-facebook {
+  margin-right: 6px; 
+}

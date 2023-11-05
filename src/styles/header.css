@@ -21,7 +21,7 @@
 }
 
 .origin-top-right {
-  background: linear-gradient(180deg, rgb(96, 132, 250)30%, white 30%);
+  background: linear-gradient(180deg, #1d4ed8 30%, white 30%);
   position: absolute;
   margin-top: 80px;
   width: 80px;
