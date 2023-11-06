@@ -56,10 +56,10 @@ function Index() {
               <div className="flex-shrink-0">
                 <img className="object-cover w-full h-48" src="https://assets1.farmaciasanpablo.com.mx/landings/_blog/spf/nota-851-3.jpg" alt="" />
               </div>
-              <div class="bg-white flex flex-col justify-between flex-1 p-2">
-                <div class="flex-1">
-                  <div class="block mt-2 space-y-6">
-                    <h3 class="text-2xl font-semibold leading-none tracking-tighter  text-black   text-center">Medicamentos</h3>
+              <div className="bg-white flex flex-col justify-between flex-1 p-2">
+                <div className="flex-1">
+                  <div className="block mt-2 space-y-6">
+                    <h3 className="text-2xl font-semibold leading-none tracking-tighter  text-black   text-center">Medicamentos</h3>
                     <p className="text-lg font-normal text-justify text-gray-700">
                       "En nuestro sitio, encontrarás información precisa y actualizada sobre una amplia variedad de medicamentos."
                     </p>
@@ -198,11 +198,9 @@ function Index() {
 
                 <div className="flex flex-1 flex-col justify-between border-2 border-blue-800">
                   <div className="p-4 sm:border-l-transparent sm:p-6">
-                    <p >
                       <h3 className="font-bold uppercase text-gray-900">
                         ¡Explora, aprende y empodérate en Med-Health!
                       </h3>
-                    </p>
 
                     <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-800 ">
                       Creemos que el conocimiento es poder cuando se trata de la salud. Estamos aquí para guiarte,
@@ -259,9 +257,9 @@ function Index() {
                     d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
                   />
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
                   />
                 </svg>
@@ -291,9 +289,9 @@ function Index() {
                     d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
                   />
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
                   />
                 </svg>
@@ -323,9 +321,9 @@ function Index() {
                     d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
                   />
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
                   />
                 </svg>
@@ -355,9 +353,9 @@ function Index() {
                     d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
                   />
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
                   />
                 </svg>

@@ -36,7 +36,7 @@ function Header() {
           <div className="flex items-center space-x-4">
             <div className="inline-flex md:hidden" x-data="{ open: false }">
               <button className="flex-none px-2 btn btn-white btn-sm">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"   aria-hidden="true">
                   <line x1="3" y1="12" x2="21" y2="12"></line>
                   <line x1="3" y1="6" x2="21" y2="6"></line>
                   <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -57,12 +57,12 @@ function Header() {
                 onClick={() => setIsOpen(!isOpen)}
               >
                 <span className="sr-only">Menu</span>
-                <img alt="Perfil" src={profile.picture || imagen || respuesta.picture.data.url } className="h-10 w-10 rounded-full object-cover" />
+                <img alt="Perfil" src={profile.picture || imagen || respuesta.picture.data.url} className="h-10 w-10 rounded-full border-2 border-blue-800 object-cover" />
                 <p className="ms-2 hidden text-left text-xs sm:block">
                   <strong className="block font-medium text-base	">{profile.name || respuesta.name}</strong>
                 </p>
                 <svg xmlns="http://www.w3.org/2000/svg" className="ms-4  h-5 w-5 text-gray-500 transition group-hover:text-gray-700 sm:block" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
 
                 {isOpen && (

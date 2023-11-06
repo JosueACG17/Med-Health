@@ -11,7 +11,7 @@ function Facebook() {
   useEffect(() => {
     const respuesta = JSON.parse(localStorage.getItem("respuestaFacebook"));
 
-    if (respuesta && respuesta.name && respuesta.email) {
+    if (respuesta && respuesta.name && respuesta.email && respuesta.picture) {
       handleLoginRedirect(); // Llama a la función de redirección si ya ha iniciado sesión
     }
   }, []);
@@ -25,7 +25,7 @@ function Facebook() {
       <FacebookLogin
         appId="2189783534558219"
         autoLoad={false}
-        fields="name,email,picture"
+        fields="name,picture,email"
         callback={respuestaFacebook}
         textButton="Facebook"
         icon="fa-facebook"
