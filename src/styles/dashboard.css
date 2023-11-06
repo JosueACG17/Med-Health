@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Domine:wght@700&family=Poppins&family=Signika:wght@700&family=Tiro+Tamil:ital@1&family=Vollkorn+SC:wght@600&display=swap');
+
+.menu-conte{ 
+    margin-left: 240px;
+    background: #ebe9e9;
+    width: 84%;
+    padding: 20px;
+}
+
+.header-titulo{
+    color: rgba(113, 99, 186, 255);
+    font-size: 22px;
+    font-family: 'Signika', sans-serif;
+}
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+
+.busca{
+    background: rgb(237, 237, 237);
+    border-radius: 15px;
+    color: rgba(112, 99, 186, 255);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+}
+
+.busca input{
+    background: transparent;
+    padding: 10px;
+}
+
+.busca i{
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+/*Cartas*/
+.carta-cont{
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.carta-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.main-title{
+    color: rgba(113, 99, 186, 255);
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-family: 'Signika', sans-serif;
+}
+
+.carta-payment{
+    background: rgb(229, 223, 223);
+    border-radius: 10px;
+    padding: 1.2rem;
+    width: 260px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+}
+
+.carta-payment:hover{
+    transform: translateY(-5px);
+}
+
+.carta-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.amount{
+    display: flex;
+    flex-direction: column;
+}
+
+.ctitulo{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.amount-valor{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.cartaicon{
+    color: #fff;
+    padding: 1rem;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background: green;
+}
+
+.light-red{
+    background: rgb(251, 233, 233);
+}
+
+.light-purple{
+    background: rgb(254, 226, 254);
+}
+
+.light-green{
+    background: rgb(235, 254, 235);
+}
+
+.light-blue{
+    background: rgb(236, 236, 254);
+}
+
+.dark-red{
+    background: red;
+}
+
+.dark-purple{
+    background: purple;
+}
+
+.dark-green{
+    background: green;
+}
+
+.dark-blue{
+    background: blue;
+}
+
+/* Tabla de APIs */
+.tabla-wrapper{
+    background: #fff;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.tabla-titulo{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Signika', sans-serif;
+    color: rgba(113, 99, 186, 255);
+}
+
+.tabla-cont{
+    width: 100%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead{
+    background: rgba(113, 99, 186, 255);
+    color: #fff;
+}
+
+th{
+    padding: 15px;
+    text-align: left;
+}
+
+tbody{
+    background: #f2f2f2;
+}
+
+td{
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+tr:nth-child(even){
+    background: #fff;
+}
+
+@media screen and (max-width: 600px) {
+   
+    .menu-conte{ 
+        margin-left: 110px;
+        background: #ebe9e9;
+        padding: 20px;
+    }
+
+  }
