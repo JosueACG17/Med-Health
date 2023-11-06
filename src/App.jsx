@@ -7,7 +7,6 @@ import Error from './pages/Error';
 import Servicios from './pages/Servicios'
 import Index from './pages/Index';
 import Dashboard from './pages/Dashboard';
-import TablaUsers from './pages/Tabla-users';
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
       <Route path='/contacto' element={<Contacto/>} />
       <Route path='/servicios' element={<Servicios/>} />
       <Route path='/dashboard' element={<Dashboard/>} />
-      <Route path='/usuarios' element={<TablaUsers/>} />
       <Route path='*' element={<Error/>} />
     </Routes>
     </BrowserRouter>
