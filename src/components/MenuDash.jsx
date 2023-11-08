@@ -43,14 +43,14 @@ function MenuDash (){
                 </li>
 
                 <li>
-                    <a href="/">
+                    <a href="/home">
                         <i><FontAwesomeIcon icon={faDoorOpen} /></i>
                         <span>Salir</span>
                     </a>
                 </li>
 
                 <li>
-                    <a onClick={logOut} href="/dashboard">
+                    <a onClick={logOut} href="/">
                         <i><FontAwesomeIcon icon={faRightFromBracket} /></i>
                         <span>Cerrar Sesión</span>
                     </a>

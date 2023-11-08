@@ -7,44 +7,6 @@
     padding: 20px;
 }
 
-.header-titulo{
-    color: rgba(113, 99, 186, 255);
-    font-size: 22px;
-    font-family: 'Signika', sans-serif;
-}
-
-.header-wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    background: #fff;
-    border-radius: 10px;
-    padding: 10px 2rem;
-    margin-bottom: 1rem;
-}
-
-.busca{
-    background: rgb(237, 237, 237);
-    border-radius: 15px;
-    color: rgba(112, 99, 186, 255);
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 4px 12px;
-}
-
-.busca input{
-    background: transparent;
-    padding: 10px;
-}
-
-.busca i{
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: all 0.5s ease-out;
-}
-
 /*Cartas*/
 .carta-cont{
     background: #fff;
