@@ -29,13 +29,46 @@ function Registro() {
           <div className="md:flex md:items-center md:justify-center w-full sm:w-auto md:h-screen w-2/5 xl:w-2/5 p-8 md:p-10 lg:p-14 sm:rounded-lg md:rounded-none bg-white items-center mx-auto">
             <div className="max-w-md w-full space-y-8 ">
               <div className="text-center">
-                <h2 className="mt-6 text-3xl font-bold text-gray-900">
+                <h2 className="text-3xl font-bold text-gray-900">
                   ¡Bienvenido de Nuevo!
                 </h2>
                 <p className="mt-2 text-sm text-blue-700 font-bold">Por favor Regístrate</p>
               </div>
-              <form className="mt-8 space-y-6" action="#" method="POST">
+              <form className="space-y-4" action="#" method="POST">
                 <input type="hidden" name="remember" defaultValue="true" />
+                <div className="relative">
+                  <label className="ml-3 text-sm font-bold text-gray-700 tracking-wide">
+                    Nombre Completo:
+                  </label>
+                  <div className="relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mx-3 text-gray-300 dark:text-gray-500 absolute left-0 top-1/2 transform -translate-y-1/2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 4a4 4 0 100 8 4 4 0 000-8zm-2 10c-4 1.5-6 2.5-6 5v2h16v-2c0-2.5-2-3.5-6-5z" />
+                    </svg>
+                    <input
+                      className="w-full text-base px-4 py-2 border-b border-gray-300 focus:outline-none rounded-2xl focus:border-indigo-500 pl-11"
+                      type="email"
+                      placeholder="Ingresa tu Nombre"
+                      required
+                    />
+                  </div>
+                </div>
+                <div className="relative">
+                  <label className="ml-3 text-sm font-bold text-gray-700 tracking-wide">
+                    Nombre de Usuario:
+                  </label>
+                  <div className="relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mx-3 text-gray-300 dark:text-gray-500 absolute left-0 top-1/2 transform -translate-y-1/2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6a4 4 0 100 8 4 4 0 000-8zm0 10c4 0 8 2 8 5v1H4v-1c0-3 4-5 8-5z" />
+                    </svg>
+
+                    <input
+                      className="w-full text-base px-4 py-2 border-b border-gray-300 focus:outline-none rounded-2xl focus:border-indigo-500 pl-11"
+                      type="email"
+                      placeholder="Ingresa tu Username"
+                      required
+                    />
+                  </div>
+                </div>
                 <div className="relative">
                   <label className="ml-3 text-sm font-bold text-gray-700 tracking-wide">
                     Correo Electrónico:
@@ -82,9 +115,11 @@ function Registro() {
 
                 <div>
                   <Link to="/">
-                    <button type="submit"
-                      className="w-full flex justify-center bg-gradient-to-r from-indigo-500 to-blue-600 hover:bg-gradient-to-l hover:from-blue-500 hover:to-cyan-500 text-gray-100 p-4 rounded-full tracking-wide font-semibold shadow-lg cursor-pointer transition ease-in duration-500">
-                      Regístrate
+                    <button
+                      type="submit"
+                      className="w-full flex mt-8 justify-center bg-gradient-to-r from-indigo-700 to-blue-700 hover:bg-gradient-to-l hover:from-blue-900 hover:to-cyan-900 text-gray-100  p-4 md:p-3 rounded-full tracking-wide font-semibold shadow-lg cursor-pointer transition ease-in duration-500 font-sans"
+                    >
+                      Registrate
                     </button>
                   </Link>
                 </div>
