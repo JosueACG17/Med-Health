@@ -22,7 +22,7 @@ function Index() {
             <h1 className="text-3xl font-extrabold sm:text-5xl text-center" >
               ¡En Med-Health lo imposible,
 
-              <strong className="block font-extrabold text-rose-700" >
+              <strong className="block font-extrabold text-rose-600" >
                 Es posible!
               </strong>
             </h1>
@@ -149,11 +149,11 @@ function Index() {
         <div className="mx-8 px-4 pt-12 sm:px-6 sm:pt-22 lg:px-8 ">
           <div className="max-w-3xl">
             <h2 className="text-2xl font-bold sm:text-3xl text-justify ">
-              Gracias por visitar Med-Health. Estás a punto de adentrarte en un viaje de descubrimiento.
+              Gracias por visitarnos. Estás a punto de adentrarte en un viaje de descubrimiento.
             </h2>
           </div>
 
-          <div className="mt-8 grid gap-8 lg:grid-cols-2 cont">
+          <div className="mt-4 grid gap-8 lg:grid-cols-2 cont">
             <div className="h-4/6 flex flex-wrap">
               <div className="flex flex-wrap md:-m-2 m-1 h-112">
                 <div className="flex flex-wrap h-4/6">
@@ -242,7 +242,7 @@ function Index() {
 
             <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
               <a
-               className="bloque block rounded-xl border-4 border-blue-900 p-8 shadow-xl transition hover:border-black"
+               className="bloque block rounded-xl border-2 border-blue-900 p-8 shadow-xl transition hover:border-black"
                 href="/servicios"
               >
                 <svg
@@ -274,7 +274,7 @@ function Index() {
               </a>
 
               <a
-                className="bloque block rounded-xl border-4 border-blue-900  p-8 shadow-xl transition hover:border-black "
+                className="bloque block rounded-xl border-2 border-blue-900  p-8 shadow-xl transition hover:border-black "
                 href="/servicios"
               >
                 <svg
@@ -306,7 +306,7 @@ function Index() {
               </a>
 
               <a
-                className="bloque block rounded-xl border-4 border-blue-900  p-8 shadow-xl transition hover:border-black "
+                className="bloque block rounded-xl border-2 border-blue-900  p-8 shadow-xl transition hover:border-black "
                 href="/servicios"
               >
                 <svg
@@ -338,7 +338,7 @@ function Index() {
               </a>
 
               <a
-                className="bloque block rounded-xl border-4 border-blue-900  p-8 shadow-xl transition hover:border-black"
+                className="bloque block rounded-xl border-2 border-blue-900  p-8 shadow-xl transition hover:border-black"
                 href="/servicios"
               >
                 <svg

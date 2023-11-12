@@ -43,7 +43,7 @@ function Nosotros() {
                     <div className="flex flex-col justify-center">
                         <div className="max-w-xl mb-6">
                             <h2 className="max-w-lg mb-8 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-center">
-                                Gracias por confiar en
+                                Tu socio en salud es
                                 <br className="hidden md:block" />
                                 <span className="relative px-1">
                                     <div className="absolute inset-x-0 bottom-0 h-2 transform -skew-x-12 bg-purple-400" />
@@ -53,7 +53,7 @@ function Nosotros() {
 
                                 </span>
                             </h2>
-                            <p className="text-base text-gray-900 md:text-lg text-justify">
+                            <p className="text-base text-gray-900 md:text-medium text-justify">
                                 Nuestro equipo dedicado, compuesto por expertos médicos y personal administrativo, trabaja incansablemente para brindarte la mejor atención posible. Confía en nosotros para cuidarte en cada paso de tu viaje hacia una vida más saludable y feliz.
                             </p>
                         </div>

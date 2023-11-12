@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse, faUser, faList, faRightFromBracket, faDoorOpen } from '@fortawesome/free-solid-svg-icons';
 import { googleLogout } from '@react-oauth/google';
+import logo from "../img/logo.png"
 import "../styles/menu.css";
 
 function MenuDash (){
@@ -18,7 +19,7 @@ function MenuDash (){
         <>
         <div className="siderbar">
             <div className="perfil"> 
-            <img src={profile.picture || "https://i.pinimg.com/564x/38/ae/8d/38ae8d4b48a93580cef2292cc776ca7a.jpg" } ></img>
+            <img src={logo } ></img>
             </div>
             <ul className="menu">
                 <li>
