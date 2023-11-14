@@ -7,6 +7,8 @@ import Error from './pages/Error';
 import Servicios from './pages/Servicios'
 import Index from './pages/Index';
 import Libreria from './pages/Libreria';
+import Companieros from './pages/Companieros';
+import Modal from './components/Modal';
 
 function App() {
 
@@ -19,7 +21,9 @@ function App() {
         <Route path='/nosotros' element={<Nosotros />} />
         <Route path='/contacto' element={<Contacto />} />
         <Route path='/servicios' element={<Servicios />} />
-        <Route path='/libreria' element={<Libreria />} />
+        <Route path='/libreria' element={<Libreria />} /> 
+        <Route path='/companieros' element={<Companieros />} />
+        <Route path='/modal' element={<Modal/>}/>
         <Route path='*' element={<Error />} />
       </Routes>
     </BrowserRouter>
