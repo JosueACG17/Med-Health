@@ -9,6 +9,7 @@ import Index from './pages/Index';
 import Libreria from './pages/Libreria';
 import Dashboard from './pages/Dashboard';
 import TablaUsers from './pages/Tabla-users';
+import PerfilUser from './pages/Perfil-User';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       <Route path='/libreria' element={<Libreria />} />
       <Route path='/dashboard' element={<Dashboard/>} />
       <Route path='/usuarios' element={<TablaUsers/>} />
+      <Route path='/perfil' element= {<PerfilUser/>} />
       <Route path='*' element={<Error/>} />
     </Routes>
     </BrowserRouter>

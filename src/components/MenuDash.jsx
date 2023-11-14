@@ -30,7 +30,7 @@ function MenuDash (){
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="/perfil">
                         <i><FontAwesomeIcon icon={faUser} /></i>
                         <span>Perfil</span>
                     </a>
