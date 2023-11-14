@@ -99,19 +99,19 @@ function Servicios() {
                             <div className="xl:w-1/2 md:w-1/2 p-4">
                                 <div className="bg-gray-300 p-6 rounded-lg">
                                     <a
-                                        href="#"
-                                        className="flex flex-col items-center bg-blue-700 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl  dark:border-gray-700 hover:bg-violet-900"
+                                        href="/companieros"
+                                        className="flex flex-col items-center dark:bg-red-100 bg-blue-700 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 hover:bg-violet-900"
                                     >
                                         <img
-                                            className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                                            src="https://images.pexels.com/photos/8199629/pexels-photo-8199629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            className="object-cover w-full rounded-t-lg h-92 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                                            src="https://images.pexels.com/photos/8131025/pexels-photo-8131025.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"                                            
                                             alt=""
                                         />
                                         <div className="flex flex-col justify-between p-4 leading-normal">
                                             <h5 className="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
                                                 Nuestra Librería
                                             </h5>
-                                            <p className="mb-3 font-normal text-white dark:text-white">
+                                            <p className="mb-3 font-normal text-gray-700 dark:text-white">
                                                 En este apartado de nuestros servicios, ofrecemos a todos nuestros usuarios,
                                                 la oportunidad de acceder de manera completamente gratuita a nuestra libreria,
                                                 para que se sientan libres de leer los libros que necesiten, contando con una amplía gama de libros para fomentar la auto ayuda y el auto descubrimiento.
@@ -124,36 +124,11 @@ function Servicios() {
                             <div className="xl:w-1/2 md:w-1/2 p-4">
                                 <div className="bg-gray-300 p-6 rounded-lg">
                                     <a
-                                        href="#"
-                                        className="flex flex-col items-center bg-blue-700 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl  dark:border-gray-700 hover:bg-violet-900"
-                                    >
-                                        <img
-                                            className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                                            src="https://images.pexels.com/photos/8199629/pexels-photo-8199629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                            alt=""
-                                        />
-                                        <div className="flex flex-col justify-between p-4 leading-normal">
-                                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
-                                                Nuestra Librería
-                                            </h5>
-                                            <p className="mb-3 font-normal text-white dark:text-white">
-                                                En este apartado de nuestros servicios, ofrecemos a todos nuestros usuarios,
-                                                la oportunidad de acceder de manera completamente gratuita a nuestra libreria,
-                                                para que se sientan libres de leer los libros que necesiten, contando con una amplía gama de libros para fomentar la auto ayuda y el auto descubrimiento.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div className="xl:w-1/2 md:w-1/2 p-4">
-                                <div className="bg-gray-300 p-6 rounded-lg">
-                                    <a
-                                        href="#"
+                                        href="/libreria"
                                         className="flex flex-col items-center bg-blue-700 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 hover:bg-violet-900"
                                     >
                                         <img
-                                            className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                                            className="object-cover w-full rounded-t-lg h-92 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
                                             src="https://images.pexels.com/photos/8199629/pexels-photo-8199629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                             alt=""
                                         />
@@ -161,7 +136,32 @@ function Servicios() {
                                             <h5 className="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
                                                 Nuestra Librería
                                             </h5>
-                                            <p className="mb-3 font-normal text-white dark:text-white">
+                                            <p className="mb-3 font-normal text-gray-700 dark:text-white">
+                                                En este apartado de nuestros servicios, ofrecemos a todos nuestros usuarios,
+                                                la oportunidad de acceder de manera completamente gratuita a nuestra libreria,
+                                                para que se sientan libres de leer los libros que necesiten, contando con una amplía gama de libros para fomentar la auto ayuda y el auto descubrimiento.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div className="xl:w-1/2 md:w-1/2 p-4">
+                                <div className="bg-gray-300 p-6 rounded-lg">
+                                    <a
+                                        href="/libreria"
+                                        className="flex flex-col items-center bg-blue-700 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 hover:bg-violet-900"
+                                    >
+                                        <img
+                                            className="object-cover w-full rounded-t-lg h-92 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                                            src="https://images.pexels.com/photos/8199629/pexels-photo-8199629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            alt=""
+                                        />
+                                        <div className="flex flex-col justify-between p-4 leading-normal">
+                                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
+                                                Nuestra Librería
+                                            </h5>
+                                            <p className="mb-3 font-normal text-gray-700 dark:text-white">
                                                 En este apartado de nuestros servicios, ofrecemos a todos nuestros usuarios,
                                                 la oportunidad de acceder de manera completamente gratuita a nuestra libreria,
                                                 para que se sientan libres de leer los libros que necesiten, contando con una amplía gama de libros para fomentar la auto ayuda y el auto descubrimiento.
