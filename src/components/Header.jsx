@@ -68,8 +68,8 @@ function Header() {
                 {isOpen && (
 
                   <div className="origin-top-right bg-white absolute mt-80 w-80 rounded-md shadow-lg overflow-hidden" style={{ right: 0, overflowX: 'auto', zIndex: 2 }}>
-                    <div className="text-center text-white font-semibold">
-                      ¡Bienvenido, {profile.given_name || respuesta.name}!
+                    <div className="text-center text-white font-semibold mb-1">
+                      ¡Hola, {profile.given_name || respuesta.name}!
                     </div>
                     <img className="ml-28 rounded-lg mb-1 h-24 w-24 " src={profile.picture|| imagen || respuesta.picture.data.url} alt="user image" />
                     <p className='text-blue-800 font-semibold'>Nombre:</p>
@@ -80,7 +80,7 @@ function Header() {
                       href="/"
                       onClick={handleLogout}
 
-                      className="block px-4 py-2 text-white text-sm bg-red-600 hover:bg-sky-700 hover:text-white"
+                      className="block px-4 py-1.5 text-white text-sm bg-red-600 hover:bg-sky-700 hover:text-white"
                     >
                       <FaSignOutAlt className="icono" />
                       <span className="text">Cerrar Sesión</span>
