@@ -7,13 +7,19 @@ import Error from './pages/Error';
 import Servicios from './pages/Servicios'
 import Index from './pages/Index';
 import Libreria from './pages/Libreria';
+<<<<<<< HEAD
 import Companieros from './pages/Companieros';
 import Modal from './components/Modal';
+=======
+import Dashboard from './pages/Dashboard';
+import TablaUsers from './pages/Tabla-users';
+>>>>>>> 03cdda33d1082e87944dc4d99f616b2696aae244
 
 function App() {
 
   return (
     <BrowserRouter>
+<<<<<<< HEAD
       <Routes>
         <Route path='/' element={<Login />} />
         <Route path='/home' element={<Index />} />
@@ -26,6 +32,20 @@ function App() {
         <Route path='/modal' element={<Modal/>}/>
         <Route path='*' element={<Error />} />
       </Routes>
+=======
+    <Routes>
+      <Route path='/' element={<Login />} />
+      <Route path='/home' element={<Index />} />
+      <Route path='/registro' element={<Registro/>} />
+      <Route path='/nosotros' element={<Nosotros/>} />
+      <Route path='/contacto' element={<Contacto/>} />
+      <Route path='/servicios' element={<Servicios/>} />
+      <Route path='/libreria' element={<Libreria />} />
+      <Route path='/dashboard' element={<Dashboard/>} />
+      <Route path='/usuarios' element={<TablaUsers/>} />
+      <Route path='*' element={<Error/>} />
+    </Routes>
+>>>>>>> 03cdda33d1082e87944dc4d99f616b2696aae244
     </BrowserRouter>
   );
 }

@@ -23,7 +23,7 @@ const Modal = ({ show, item, onClose }) => {
       <div className="modal-container bg-white w-700 h-550 p-6 relative box-border overflow-hidden text-base">
         <div className="flex justify-end p-4">
           <button
-            className="text-gray-900 text-2xl bg-gray-200 rounded-full p-2 px-4 hover:bg-gray-300"
+            className="text-gray-900 text-2xl bg-gray-200 rounded-full p-2 px-6 mt-10  hover:bg-gray-300"
             onClick={onClose}
           >
             <FaWindowClose/>
