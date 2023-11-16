@@ -11,6 +11,8 @@ import Dashboard from './pages/Dashboard';
 import TablaUsers from './pages/Tabla-users';
 import Companieros from './pages/Companieros';
 import Modal from './components/Modal';
+import KittyCarousel from './components/KittyCarousel';
+import DogCarousel from './components/DogCarousel';
 
 function App() {
 
@@ -28,6 +30,8 @@ function App() {
         <Route path='/usuarios' element={<TablaUsers/>} />
         <Route path='/companieros' element={<Companieros />} />
         <Route path='/modal' element={<Modal/>}/>
+        <Route path='/Carousel' element={<KittyCarousel/>}/>
+        <Route path='/dog' element={<DogCarousel/>}/>
         <Route path='*' element={<Error />} />
       </Routes>
     </BrowserRouter>

@@ -7,14 +7,14 @@ import YouTubePlayer from "../components/YoutubePlayer";
 import Banner from "../components/Banner";
 import React, { useState } from "react";
 import Modal from "../components/Modal";
+import ModalAnimales from "../components/ModalAnimales";
+import KittyCarousel from "../components/KittyCarousel";
+import DogCarousel from "../components/DogCarousel";
 
-function Companieros() {
+const Companieros = () => {
 
-    const [isModalVisible, setIsModalVisible] = useState(false);
-
-    const openModal = () => {
-        setIsModalVisible(!isModalVisible);
-    };
+    const [showModal, setShowModal] = useState(false);
+    const [showModalAnimales, setShowModalAnimales ] = useState(false);
 
     return (
         <>
@@ -60,40 +60,38 @@ function Companieros() {
                             y pacífico, a veces los héroes tienen otro origen.
                         </p>
                         <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
-                            <a
-                                onClick={openModal} 
-                                className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+                            <button
+                                className="bg-cyan-700 dark:bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-teal-600 dark:hover:bg-blue-950 hover:text-pink-200"
+                                onClick={() => setShowModal(true)}
                             >
-                                Conoce más
-                                <svg
-                                    className="w-3.5 h-3.5 ml-2"
-                                    aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 14 10"
-                                >
-                                    <path
-                                        stroke="currentColor"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth={2}
-                                        d="M1 5h12m0 0L9 1m4 4L9 9"
-                                    />
-                                </svg>
-                            </a>
-                            {isModalVisible && <Modal onClose={() => setIsModalVisible(false)} />}
-                            <a
-                                href="#"
-                                className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+                                Beneficios TAA
+                            </button>
+                            <Modal showModal={showModal} setShowModal={setShowModal} />
+                            <button
+                                className="bg-cyan-700 dark:bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-teal-600 dark:hover:bg-blue-950 hover:text-pink-200"
+                                onClick={() => setShowModalAnimales(true)}
                             >
-                                Learn more
-                            </a>
+                                Pequeños heroés
+                            </button>
+                            <ModalAnimales showModalAnimales={showModalAnimales} setShowModalAnimales={setShowModalAnimales} />
                         </div>
                     </div>
                     <div>
 
                         <YouTubePlayer></YouTubePlayer>
 
+                    </div>
+                    <div>
+                        <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">
+                            Nuestros Gatitos Estrella
+                        </h2>
+                        <KittyCarousel></KittyCarousel>
+                    </div>
+                    <div>
+                        <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">
+                            Nuestros Perritos Estrella
+                        </h2>
+                        <DogCarousel></DogCarousel>
                     </div>
                 </div>
             </section>
