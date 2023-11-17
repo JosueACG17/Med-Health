@@ -13,6 +13,7 @@ import Companieros from './pages/Companieros';
 import Modal from './components/Modal';
 import KittyCarousel from './components/KittyCarousel';
 import DogCarousel from './components/DogCarousel';
+import NewsAPI from './pages/Noticias';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Route path='/Carousel' element={<KittyCarousel/>}/>
         <Route path='/dog' element={<DogCarousel/>}/>
         <Route path='*' element={<Error />} />
+        <Route path='/noticias' element={<NewsAPI />}/>
       </Routes>
     </BrowserRouter>
   );

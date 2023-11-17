@@ -69,108 +69,201 @@ function Servicios() {
                         <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
                         </div>
 
-                        <div className="flex flex-wrap -m-4">
+            <div className="flex flex-wrap -m-4">
+                            
+            <div className="xl:w-1/2 md:w-1/2 p-4">                          
+                <div className="relative flex w-full max-w-[48rem] h-[24rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md overflow-hidden">
+                <div class="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
+                    <img
+                    src="https://th.bing.com/th/id/OIG.KFM_rvL0j9Loxu_6JFsW?pid=ImgGn"
+                    alt="image"
+                    class="h-full w-full object-cover"
+                    />
+                </div>
+                <div class="p-6">
+                    <h6 class="mb-4 block font-sans text-base font-semibold uppercase leading-relaxed tracking-normal text-blue-500 antialiased">
+                    Nuestra Librería
+                    </h6>
+                    <h4 class="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                    Libros Esenciales para una Vida Saludable, Biblioteca de Bienestar.
+                    </h4>
+                    <p class="mb-8 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
+                    En este apartado de nuestros servicios, ofrecemos a todos nuestros usuarios,
+                    la oportunidad de acceder de manera completamente gratuita a nuestra libreria,
+                    para que se sientan libres de leer los libros que necesiten, 
+                    contando con una amplía gama de libros para fomentar la auto ayuda y el auto descubrimiento.
+                    </p>
+                    <a class="inline-block" href="/libreria">
+                    <button
+                        class="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-500 transition-all hover:bg-blue-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                        type="button"
+                    >
+                        Entrar
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        class="h-4 w-4"
+                        >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                        ></path>
+                        </svg>
+                    </button>
+                    </a>
+                </div>
+                </div>
+            </div>
 
-                            <div className="xl:w-1/2 md:w-1/2 p-4">
-                                <div className="bg-gray-100 p-6 rounded-lg">
-                                    <a
-                                        href="/libreria"
-                                        className="flex flex-col items-center bg-blue-700 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 hover:bg-violet-900"
-                                    >
-                                        <img
-                                            className="object-cover w-full rounded-t-lg h-92 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                                            src="https://images.pexels.com/photos/8199629/pexels-photo-8199629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                            alt=""
-                                        />
-                                        <div className="flex flex-col justify-between p-4 leading-normal">
-                                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                                Nuestra Librería
-                                            </h5>
-                                            <p className="mb-3 font-normal text-gray-900 dark:text-white">
-                                                En este apartado de nuestros servicios, ofrecemos a todos nuestros usuarios,
-                                                la oportunidad de acceder de manera completamente gratuita a nuestra libreria,
-                                                para que se sientan libres de leer los libros que necesiten, contando con una amplía gama de libros para fomentar la auto ayuda y el auto descubrimiento.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
+            <div className="xl:w-1/2 md:w-1/2 p-4">                          
+                <div className="relative flex w-full max-w-[48rem] h-[24rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md overflow-hidden">
+                <div class="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
+                    <img
+                    src="https://th.bing.com/th/id/OIG.tEwUpkLTugkRsKn4qiGP?pid=ImgGn"
+                    alt="image"
+                    class="h-full w-full object-cover"
+                    />
+                </div>
+                <div class="p-6">
+                    <h6 class="mb-4 block font-sans text-base font-semibold uppercase leading-relaxed tracking-normal text-blue-500 antialiased">
+                    Mascotas para la salud
+                    </h6>
+                    <h4 class="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                    Terapia Asistida Por Animales
+                    </h4>
+                    <p class="mb-8 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
+                    La interacción con los animales puede ayudar a reducir el estrés, la ansiedad y la depresión, 
+                    así como mejorar la comunicación y la autoestima. Además, 
+                    los animales pueden ser especialmente beneficiosos para personas con discapacidades físicas o mentales,
+                    ya que pueden ayudar a mejorar la movilidad, la coordinación y la concentración.
+                    </p>
+                    <a class="inline-block" href="/companieros">
+                    <button
+                        class="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-500 transition-all hover:bg-blue-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                        type="button"
+                    >
+                        Entrar
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        class="h-4 w-4"
+                        >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                        ></path>
+                        </svg>
+                    </button>
+                    </a>
+                </div>
+                </div>
+            </div>
 
-                            <div className="xl:w-1/2 md:w-1/2 p-4">
-                                <div className="bg-gray-100 p-6 rounded-lg">
-                                    <a
-                                        href="/companieros"
-                                        className="flex flex-col items-center dark:bg-red-100 bg-blue-700 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 hover:bg-violet-900"
-                                    >
-                                        <img
-                                            className="object-cover w-full rounded-t-lg h-92 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                                            src="https://images.pexels.com/photos/8131025/pexels-photo-8131025.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"                                            
-                                            alt=""
-                                        />
-                                        <div className="flex flex-col justify-between p-4 leading-normal">
-                                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                                Terapia Asistida Por Animales
-                                            </h5>
-                                            <p className="mb-3 font-normal text-gray-900 dark:text-white">
-                                            La interacción con los animales puede ayudar a reducir el estrés, la ansiedad y la depresión, 
-                                            así como mejorar la comunicación y la autoestima. Además, 
-                                            los animales pueden ser especialmente beneficiosos para personas con discapacidades físicas o mentales,
-                                             ya que pueden ayudar a mejorar la movilidad, la coordinación y la concentración.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
+            <div className="xl:w-1/2 md:w-1/2 p-4">                          
+                <div className="relative flex w-full max-w-[48rem] h-[24rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md overflow-hidden">
+                <div class="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
+                    <img
+                    src="https://th.bing.com/th/id/OIG.blKki.Ub3953QeZQ8Y.F?pid=ImgGn"
+                    alt="image"
+                    class="h-full w-full object-cover"
+                    />
+                </div>
+                <div class="p-6">
+                    <h6 class="mb-4 block font-sans text-base font-semibold uppercase leading-relaxed tracking-normal text-blue-500 antialiased">
+                    Hospitales cerca de ti 
+                    </h6>
+                    <h4 class="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                    Mapa Interactivo de Hospitales en Med-Health
+                    </h4>
+                    <p class="mb-8 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
+                    Nuestro mapa interactivo de hospitales en Med-Health es una herramienta esencial para ayudarte a localizar fácilmente las instalaciones de atención médica más cercanas. 
+                    Ya sea que busques un hospital especializado o una clínica general, este mapa te guiará hacia la opción más adecuada para tus necesidades de salud.
+                    </p>
+                    <a class="inline-block" href="/companieros">
+                    <button
+                        class="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-500 transition-all hover:bg-blue-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                        type="button"
+                    >
+                        Entrar
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        class="h-4 w-4"
+                        >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                        ></path>
+                        </svg>
+                    </button>
+                    </a>
+                </div>
+                </div>
+            </div>
 
-                            <div className="xl:w-1/2 md:w-1/2 p-4">
-                                <div className="bg-gray-100 p-6 rounded-lg">
-                                    <a
-                                        href="/libreria"
-                                        className="flex flex-col items-center bg-blue-700 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 hover:bg-violet-900"
-                                    >
-                                        <img
-                                            className="object-cover w-full rounded-t-lg h-92 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                                            src="https://images.pexels.com/photos/8199629/pexels-photo-8199629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                            alt=""
-                                        />
-                                        <div className="flex flex-col justify-between p-4 leading-normal">
-                                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                                Nuestra Librería
-                                            </h5>
-                                            <p className="mb-3 font-normal text-gray-900 dark:text-white">
-                                                En este apartado de nuestros servicios, ofrecemos a todos nuestros usuarios,
-                                                la oportunidad de acceder de manera completamente gratuita a nuestra libreria,
-                                                para que se sientan libres de leer los libros que necesiten, contando con una amplía gama de libros para fomentar la auto ayuda y el auto descubrimiento.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div className="xl:w-1/2 md:w-1/2 p-4">
-                                <div className="bg-gray-100 p-6 rounded-lg">
-                                    <a
-                                        href="/libreria"
-                                        className="flex flex-col items-center bg-blue-700 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 hover:bg-violet-900"
-                                    >
-                                        <img
-                                            className="object-cover w-full rounded-t-lg h-92 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                                            src="https://images.pexels.com/photos/8199629/pexels-photo-8199629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                            alt=""
-                                        />
-                                        <div className="flex flex-col justify-between p-4 leading-normal">
-                                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                                Nuestra Librería
-                                            </h5>
-                                            <p className="mb-3 font-normal text-gray-900 dark:text-white">
-                                                En este apartado de nuestros servicios, ofrecemos a todos nuestros usuarios,
-                                                la oportunidad de acceder de manera completamente gratuita a nuestra libreria,
-                                                para que se sientan libres de leer los libros que necesiten, contando con una amplía gama de libros para fomentar la auto ayuda y el auto descubrimiento.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
+            <div className="xl:w-1/2 md:w-1/2 p-4">                          
+                <div className="relative flex w-full max-w-[48rem] h-[24rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md overflow-hidden">
+                <div class="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
+                    <img
+                    src="https://th.bing.com/th/id/OIG.OqTo.xFOQHfiExd52zlq?pid=ImgGn"
+                    alt="image"
+                    class="h-full w-full object-cover"
+                    />
+                </div>
+                <div class="p-6">
+                    <h6 class="mb-4 block font-sans text-base font-semibold uppercase leading-relaxed tracking-normal text-blue-500 antialiased">
+                    Noticias 
+                    </h6>
+                    <h4 class="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                    Noticias y Avances Médicos Recientes en Med-Health
+                    </h4>
+                    <p class="mb-8 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
+                    En nuestro apartado de noticias en Med-Health, te mantenemos al día con las últimas tendencias, 
+                    investigaciones y avances en el mundo de la salud y la medicina. Desde innovaciones en tratamientos 
+                    hasta estudios de vanguardia y consejos de bienestar.
+                    </p>
+                    <a class="inline-block" href="/noticias">
+                    <button
+                        class="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-500 transition-all hover:bg-blue-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                        type="button"
+                    >
+                        Entrar
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        class="h-4 w-4"
+                        >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                        ></path>
+                        </svg>
+                    </button>
+                    </a>
+                </div>
+                </div>
+            </div>
+ 
                         </div>
 
                     </div>
