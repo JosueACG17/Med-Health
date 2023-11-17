@@ -9,6 +9,7 @@ import Index from './pages/Index';
 import Libreria from './pages/Libreria';
 import Dashboard from './pages/Dashboard';
 import TablaUsers from './pages/Tabla-users';
+import FormEditMod from './components/FormEditMod';
 
 function App() {
 
