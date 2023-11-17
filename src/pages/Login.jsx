@@ -72,14 +72,14 @@ function Login() {
                     </div>
 
                     <div className="md:flex md:items-center w-full md:justify-center sm:w-auto md:h-full xl:w-2/5 p-8  md:p-10 lg:p-10 sm:rounded-lg md:rounded-none bg-white ">
-                        <div className="max-w-md w-full mr-10">
+                        <div className="max-w-md  w-full mr-10">
                             <div className="text-center">
                                 <h2 className="text-3xl font-bold text-blue-900 font-serif">
                                     Inicia Sesión
                                 </h2>
                             </div>
 
-                            <form className="space-y-5" action="#" method="POST">
+                            <form className="space-y-6" action="#" method="POST">
                                 <input type="hidden" name="remember" defaultValue="true" />
                                 <div className="relative">
                                     <label className="ml-3 text-sm font-bold text-gray-800 tracking-wide">
@@ -155,12 +155,9 @@ function Login() {
                                     <span className="font-semibold text-black">O continuar con</span>
                                     <span className="h-px w-32 bg-black" />
                                 </div>
-                                <div className="justify-center ">
+                                <div className="justify-center  ">
                                     {/* BOTON DE GOOGLE */}
                                     <BGoogle></BGoogle>
-                                    {/*BOTON DE GITHUB */}
-                                    <BGithub></BGithub>
-
                                     {/*BOTON DE MICROSOFT */}
 
                                     <BFacebook></BFacebook>

@@ -9,23 +9,33 @@ import Index from './pages/Index';
 import Libreria from './pages/Libreria';
 import Dashboard from './pages/Dashboard';
 import TablaUsers from './pages/Tabla-users';
+import Companieros from './pages/Companieros';
+import Modal from './components/Modal';
+import Perfil from './pages/Perfil-User';
+import Mapa from './pages/Mapa';
+import Noticias from './pages/Noticias';
 
 function App() {
 
   return (
     <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<Login />} />
-      <Route path='/home' element={<Index />} />
-      <Route path='/registro' element={<Registro/>} />
-      <Route path='/nosotros' element={<Nosotros/>} />
-      <Route path='/contacto' element={<Contacto/>} />
-      <Route path='/servicios' element={<Servicios/>} />
-      <Route path='/libreria' element={<Libreria />} />
-      <Route path='/dashboard' element={<Dashboard/>} />
-      <Route path='/usuarios' element={<TablaUsers/>} />
-      <Route path='*' element={<Error/>} />
-    </Routes>
+      <Routes>
+        <Route path='/' element={<Login />} />
+        <Route path='/home' element={<Index />} />
+        <Route path='/registro' element={<Registro />} />
+        <Route path='/nosotros' element={<Nosotros />} />
+        <Route path='/contacto' element={<Contacto />} />
+        <Route path='/servicios' element={<Servicios />} />
+        <Route path='/libreria' element={<Libreria />} />
+        <Route path='/mapa' element={<Mapa />} />
+        <Route path='/noticias' element={<Noticias />} />
+        <Route path= '/perfil' element={<Perfil />} />
+        <Route path='/dashboard' element={<Dashboard/>} />
+        <Route path='/usuarios' element={<TablaUsers/>} />
+        <Route path='/companieros' element={<Companieros />} />
+        <Route path='/modal' element={<Modal/>}/>
+        <Route path='*' element={<Error />} />
+      </Routes>
     </BrowserRouter>
   );
 }

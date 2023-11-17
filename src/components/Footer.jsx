@@ -7,7 +7,7 @@ function Footer() {
     <>
       <div className="relative mt-10 bg-blue-900">
         <svg
-          className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-blue-900 dark:bg-gray-900"
+          className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-blue-900 "
           preserveAspectRatio="none"
           viewBox="0 0 1440 54"
         >

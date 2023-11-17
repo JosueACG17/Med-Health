@@ -5,13 +5,7 @@ import { faMagnifyingGlass, faUsers, faBookMedical, faKitMedical, faUserPlus } f
 import "../styles/dashboard.css";
 
 function Dashboard() {
-  const [profile, setProfile] = useState(JSON.parse(localStorage.getItem('userProfile')) || {});
-
-  const logOut = () => {
-    googleLogout();
-    localStorage.removeItem('userProfile');
-    setProfile([]);
-  };
+  const profile= JSON.parse(localStorage.getItem('userProfile')) || {};
 
   return (
     <>

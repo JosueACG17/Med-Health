@@ -106,7 +106,7 @@ function Index() {
 
       {/* Seccion */}
       <section >
-        <div className="mx-8 pb-3 lg:px-8 mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        <div className="mx-4 lg:px-8 mx-auto px-4 py-8 sm:px-6 lg:px-8 ">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
 
             <div className="bg-blue-700 p-8 md:p-12 lg:px-16 lg:py-24 rounded-lg">
@@ -198,9 +198,9 @@ function Index() {
 
                 <div className="flex flex-1 flex-col justify-between border-2 border-blue-800">
                   <div className="p-4 sm:border-l-transparent sm:p-6">
-                      <h3 className="font-bold uppercase text-gray-900">
-                        ¡Explora, aprende y empodérate en Med-Health!
-                      </h3>
+                    <h3 className="font-bold uppercase text-gray-900">
+                      ¡Explora, aprende y empodérate en Med-Health!
+                    </h3>
 
                     <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-800 ">
                       Creemos que el conocimiento es poder cuando se trata de la salud. Estamos aquí para guiarte,
@@ -223,9 +223,9 @@ function Index() {
         </div>
 
         {/*Seccion de bloques*/}
-        <div className=" text-black font-bold mb-16 ">
+        <div className=" text-black font-bold mb-24 ">
           <div
-            className="mx-auto max-w-full mr-1 ml-1 px-4 sm:py-18 sm:px-6 lg:py-14 lg:px-8"
+            className="mx-auto max-w-full mr-1 ml-1 px-4 sm:py-18 sm:px-6 lg:py-2 lg:px-8"
           >
             <div className="mx-auto max-w-lg text-center">
               <h1
@@ -242,7 +242,7 @@ function Index() {
 
             <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
               <a
-               className="bloque block rounded-xl border-2 border-blue-900 p-8 shadow-xl transition hover:border-black"
+                className="bloque block rounded-xl border-2 border-blue-900 p-6 shadow-xl transition hover:border-black"
                 href="/servicios"
               >
                 <svg
@@ -264,7 +264,7 @@ function Index() {
                   />
                 </svg>
 
-                <h2 className="mt-4 text-xl font-bold text-black  text-center">Servicios</h2>
+                <h2 className="mt-3 text-xl font-bold text-black  text-center">Servicios</h2>
 
                 <p className="mt-3 text-sm font-medium text-black  text-justify">
                   Nuestro servicio de "Servicios Médicos" se basa en la integración de APIs externas confiables. Ofrecemos a nuestros usuarios acceso a una amplia gama de servicios médicos,
@@ -274,7 +274,7 @@ function Index() {
               </a>
 
               <a
-                className="bloque block rounded-xl border-2 border-blue-900  p-8 shadow-xl transition hover:border-black "
+                className="bloque block rounded-xl border-2 border-blue-900  p-6 shadow-xl transition hover:border-black "
                 href="/servicios"
               >
                 <svg
@@ -296,7 +296,7 @@ function Index() {
                   />
                 </svg>
 
-                <h2 className="mt-4 text-xl font-bold text-black  text-center">Información Médica</h2>
+                <h2 className="mt-3 text-xl font-bold text-black  text-center">Información Médica</h2>
 
                 <p className="mt-3 text-sm	font-medium text-black  text-justify">
                   Se enfoca en proporcionar a nuestros usuarios información precisa y actualizada sobre una variedad de temas médicos y de salud.
@@ -306,7 +306,7 @@ function Index() {
               </a>
 
               <a
-                className="bloque block rounded-xl border-2 border-blue-900  p-8 shadow-xl transition hover:border-black "
+                className="bloque block rounded-xl border-2 border-blue-900  p-6 shadow-xl transition hover:border-black "
                 href="/servicios"
               >
                 <svg
@@ -328,7 +328,7 @@ function Index() {
                   />
                 </svg>
 
-                <h2 className="mt-4 text-xl font-bold text-black  text-center">Hospitales</h2>
+                <h2 className="mt-3 text-xl font-bold text-black  text-center">Hospitales</h2>
 
                 <p className="mt-3 text-sm	font-medium text-black  text-justify">
                   A través de nuestra función "Hospitales Disponibles," los usuarios pueden acceder a la API de GPS de Google para identificar
@@ -338,7 +338,7 @@ function Index() {
               </a>
 
               <a
-                className="bloque block rounded-xl border-2 border-blue-900  p-8 shadow-xl transition hover:border-black"
+                className="bloque block rounded-xl border-2 border-blue-900  p-6 shadow-xl transition hover:border-black"
                 href="/servicios"
               >
                 <svg
@@ -360,7 +360,7 @@ function Index() {
                   />
                 </svg>
 
-                <h2 className="mt-4 text-xl font-bold text-black  text-center">Medicina</h2>
+                <h2 className="mt-3 text-xl font-bold text-black  text-center">Medicina</h2>
 
                 <p className="mt-3 text-sm	font-medium text-black  text-justify">
                   Se dedica a ofrecer información general sobre el campo de la medicina. Los usuarios pueden explorar una amplia gama de temas médicos,

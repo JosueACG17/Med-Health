@@ -82,7 +82,7 @@ function Nosotros() {
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div className="mt-3">
                         <video
                             className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
                             src={video}
@@ -90,7 +90,6 @@ function Nosotros() {
                             autoPlay
                             loop
                             muted
-
                         />
                     </div>
                 </div>
@@ -98,7 +97,7 @@ function Nosotros() {
 
             {/* PARTE DE LAS CARTAS */}
             <Cartas></Cartas>
-            
+
             <Footer></Footer>
         </>
 

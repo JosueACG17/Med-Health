@@ -36,7 +36,7 @@ function Servicios() {
                                 Servicios
                             </span>
                         </h2>
-                        <p className="pr-5 mb-5 text-sm text-justify text-gray-700 md:text-lg">
+                        <p className="pr-5 mb-5 text-sm font-medium text-justify text-gray-800 md:text-lg">
                             En Med-Health nos preocupamos por todos nuestros usuarios y procuramos entregarles los mejores servicios, para atención médica y psicológica, por lo que tenemos una actitud de servicio en pro del bienestar de los derechoambientes, para esto ofrecemos los siguientes servicios:
                         </p>
                     </div>
@@ -100,7 +100,7 @@ function Servicios() {
                                 <div className="bg-gray-300 p-6 rounded-lg">
                                     <a
                                         href="/companieros"
-                                        className="flex flex-col items-center dark:bg-red-100 bg-blue-700 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 hover:bg-violet-900"
+                                        className="flex flex-col items-center  bg-blue-700 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 hover:bg-violet-900"
                                     >
                                         <img
                                             className="object-cover w-full rounded-t-lg h-92 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
@@ -109,12 +109,12 @@ function Servicios() {
                                         />
                                         <div className="flex flex-col justify-between p-4 leading-normal">
                                             <h5 className="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
-                                                Nuestra Librería
+                                                Compañia para ti
                                             </h5>
                                             <p className="mb-3 font-normal text-gray-700 dark:text-white">
-                                                En este apartado de nuestros servicios, ofrecemos a todos nuestros usuarios,
-                                                la oportunidad de acceder de manera completamente gratuita a nuestra libreria,
-                                                para que se sientan libres de leer los libros que necesiten, contando con una amplía gama de libros para fomentar la auto ayuda y el auto descubrimiento.
+                                            En nuestro equipo, creemos que la comunicación y el efecto es clave para el éxito. 
+                                            Trabajamos juntos con nuestras mascotas para asegurarnos de que nuestros clientes reciban el acompañamiento que necesitan.
+                                            Nos enorgullece trabajar juntos y de hacer una diferencia en la vida de nuestros clientes
                                             </p>
                                         </div>
                                     </a>
@@ -124,22 +124,23 @@ function Servicios() {
                             <div className="xl:w-1/2 md:w-1/2 p-4">
                                 <div className="bg-gray-300 p-6 rounded-lg">
                                     <a
-                                        href="/libreria"
+                                        href="/mapa"
                                         className="flex flex-col items-center bg-blue-700 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 hover:bg-violet-900"
                                     >
                                         <img
                                             className="object-cover w-full rounded-t-lg h-92 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                                            src="https://images.pexels.com/photos/8199629/pexels-photo-8199629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            src="https://i.pinimg.com/236x/5b/4b/09/5b4b09f480e6e6029ad9398bf324db77.jpg"
                                             alt=""
                                         />
                                         <div className="flex flex-col justify-between p-4 leading-normal">
                                             <h5 className="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
-                                                Nuestra Librería
+                                                Mapa Hospitales
                                             </h5>
                                             <p className="mb-3 font-normal text-gray-700 dark:text-white">
-                                                En este apartado de nuestros servicios, ofrecemos a todos nuestros usuarios,
-                                                la oportunidad de acceder de manera completamente gratuita a nuestra libreria,
-                                                para que se sientan libres de leer los libros que necesiten, contando con una amplía gama de libros para fomentar la auto ayuda y el auto descubrimiento.
+                                            Bienvenido a nuestra red de hospitales comprometidos con tu salud y bienestar, aventurate entre todos
+                                             nuestros centros médicos que están estratégicamente ubicados para brindarte acceso rápido y conveniente a servicios de calidad.
+                                             Confía en nosotros para cuidar de ti y tus seres queridos en cada paso de tu camino hacia la salud.
+
                                             </p>
                                         </div>
                                     </a>
@@ -149,7 +150,7 @@ function Servicios() {
                             <div className="xl:w-1/2 md:w-1/2 p-4">
                                 <div className="bg-gray-300 p-6 rounded-lg">
                                     <a
-                                        href="/libreria"
+                                        href="/noticias"
                                         className="flex flex-col items-center bg-blue-700 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 hover:bg-violet-900"
                                     >
                                         <img
@@ -159,7 +160,7 @@ function Servicios() {
                                         />
                                         <div className="flex flex-col justify-between p-4 leading-normal">
                                             <h5 className="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
-                                                Nuestra Librería
+                                                Nuestras Noticias
                                             </h5>
                                             <p className="mb-3 font-normal text-gray-700 dark:text-white">
                                                 En este apartado de nuestros servicios, ofrecemos a todos nuestros usuarios,

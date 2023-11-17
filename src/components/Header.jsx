@@ -5,8 +5,7 @@ import imagen from "../img/header.png";
 import logo from "../img/logo.png"
 import "../styles/header.css"
 import { FaHome, FaUsers, FaBriefcase, FaEnvelope, FaSignOutAlt } from 'react-icons/fa';
-import { googleLogout } from '@react-oauth/google';
-import ThemeToggleButton from './ThemeToggleButton';
+import { googleLogout } from '@react-oauth/google';;
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -101,7 +100,6 @@ function Header() {
         <a className="py-4 m-0 tab-link font-bold text-white hover:text-yellow-500" href="/nosotros"><span><FaUsers className="icon" /> Nosotros</span></a>
         <a className="py-4 m-0 tab-link font-bold text-white hover:text-yellow-500" href="/servicios"><span><FaBriefcase className="icon" /> Servicios</span></a>
         <a className="py-4 m-0 tab-link font-bold text-white hover:text-yellow-500" href="/contacto"><span><FaEnvelope className="icon" /> Contacto</span></a>
-        <ThemeToggleButton></ThemeToggleButton>
       </nav>
 
     </>

@@ -30,13 +30,6 @@ function MenuDash (){
                 </li>
 
                 <li>
-                    <a href="/perfil">
-                        <i><FontAwesomeIcon icon={faUser} /></i>
-                        <span>Perfil</span>
-                    </a>
-                </li>
-
-                <li>
                     <a href="/usuarios">
                         <i><FontAwesomeIcon icon={faList} /></i>
                         <span>Tablas</span>

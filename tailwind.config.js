@@ -330,7 +330,5 @@ export default {
     },
     plugins: [require("kutty")],
   }
-}
-
 
   

@@ -8,7 +8,7 @@ function Banner() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowBanner(false);
-    }, 8000);
+    }, 3000);
 
     return () => {
       clearTimeout(timer);
@@ -36,7 +36,7 @@ function Banner() {
               Med-Health
             </span>
           </a>
-          <p className="flex items-center text-gray-500 dark:text-gray-400">
+          <p className="flex items-center text-white dark:text-white">
             Puedes ponerte en contacto con entrenadores certificados.
           </p>
         </div>

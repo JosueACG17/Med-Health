@@ -23,17 +23,17 @@ function Cartas(){
     const cardsData = [
         {
             title: 'Misión',
-            image: "https://images.pexels.com/photos/3259624/pexels-photo-3259624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            image: "https://player.vimeo.com/external/371911097.sd.mp4?s=d58e8d2d5403738610735f6ac579d13cff1cb97a&profile_id=164&oauth2_token_id=57447761",
             description: 'Proporcionar atención médica de la más alta calidad y compasión a nuestros pacientes, brindando soluciones médicas efectivas y centradas en el paciente. Nuestro compromiso es ser una esperanza para todos los que buscan atención médica.',
         },
         {
             title: 'Visión',
-            image: "https://images.pexels.com/photos/11198234/pexels-photo-11198234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            image: "https://player.vimeo.com/external/412666058.sd.mp4?s=36800e261b51652ea8a5467ed02f4512e049f18f&profile_id=164&oauth2_token_id=57447761",
             description: 'Liderar la atención médica, impulsando avances innovadores y tecnología de vanguardia para mejorar la salud y el bienestar de la comunidad. Buscamos ser un referente en el campo de la salud, donde los pacientes puedan confiar en nosotros.',
         },
         {
             title: 'Experiencia',
-            image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            image: "https://player.vimeo.com/external/361093261.sd.mp4?s=c1c79c56133947abc893c2fc49e235ebe8e07896&profile_id=164&oauth2_token_id=57447761",
             description: 'Con más de 30 años de experiencia en la salud, Med-Health ha sido un pilar, brindando atención médica excepcional y apoyo a lo largo del tiempo. Nuestra experiencia se refleja en la confianza que miles de pacientes han depositado en nosotros.',
         },
     ];
@@ -58,11 +58,16 @@ function Cartas(){
                     return (
                         <animated.div key={index} className="card-container " style={{ ...cardAnimation, width: '500px', height: '500px' }}>
                             <div className="group relative block bg-black">
-                                <img
+                                <video
                                     alt="Card"
                                     src={card.image}
                                     loading="lazy"
+                                    autoPlay
+                                    loop
+                                    muted
                                     className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                                    onMouseEnter={event => event.target.play()}
+                                    onMouseLeave={event => event.target.pause()}
                                 />
 
                                 <div className="relative p-4 sm:p-6 lg:p-8">
