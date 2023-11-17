@@ -1,9 +1,12 @@
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import imagen from "../img/header.png";
 import logo from "../img/logo.png"
 import "../styles/header.css"
 import { FaHome, FaUsers, FaBriefcase, FaEnvelope, FaSignOutAlt } from 'react-icons/fa';
 import { googleLogout } from '@react-oauth/google';
+import ThemeToggleButton from './ThemeToggleButton';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -68,8 +71,8 @@ function Header() {
                 {isOpen && (
 
                   <div className="origin-top-right bg-white absolute mt-80 w-80 rounded-md shadow-lg overflow-hidden" style={{ right: 0, overflowX: 'auto', zIndex: 2 }}>
-                    <div className="text-center text-white font-semibold">
-                      ¡Bienvenido, {profile.given_name || respuesta.name}!
+                    <div className="text-center text-white font-semibold mb-1">
+                      ¡Hola, {profile.given_name || respuesta.name}!
                     </div>
                     <img className="ml-28 rounded-lg mb-1 h-24 w-24 " src={profile.picture|| imagen || respuesta.picture.data.url} alt="user image" />
                     <p className='text-blue-800 font-semibold'>Nombre:</p>
@@ -80,7 +83,7 @@ function Header() {
                       href="/"
                       onClick={handleLogout}
 
-                      className="block px-4 py-2 text-white text-sm bg-red-600 hover:bg-sky-700 hover:text-white"
+                      className="block px-4 py-1.5 text-white text-sm bg-red-600 hover:bg-sky-700 hover:text-white"
                     >
                       <FaSignOutAlt className="icono" />
                       <span className="text">Cerrar Sesión</span>
@@ -98,6 +101,7 @@ function Header() {
         <a className="py-4 m-0 tab-link font-bold text-white hover:text-yellow-500" href="/nosotros"><span><FaUsers className="icon" /> Nosotros</span></a>
         <a className="py-4 m-0 tab-link font-bold text-white hover:text-yellow-500" href="/servicios"><span><FaBriefcase className="icon" /> Servicios</span></a>
         <a className="py-4 m-0 tab-link font-bold text-white hover:text-yellow-500" href="/contacto"><span><FaEnvelope className="icon" /> Contacto</span></a>
+        <ThemeToggleButton></ThemeToggleButton>
       </nav>
 
     </>
