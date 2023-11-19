@@ -64,19 +64,19 @@ const Libreria = () => {
           <div className="header bg-indigo-800 text-white p-6 rounded-lg">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <h1 className="text-2xl md:text-2xl  text-justify font-bold">
+                <h1 className="text-2xl md:text-2xl  text-center font-bold">
                   Una habitación con libros, es como un cuerpo con alma.
                 </h1>
               </div>
               <div className="text-right">
-                <h2 className="text-2xl md:text-2xl font-semibold mb-2">
+                <h2 className="text-2xl md:text-2xl font-semibold mb-2 mr-10">
                   Encuentra Tu Nuevo Libro Favorito
                 </h2>
                 <div className="flex items-center space-x-2 mt-5">
                   <input
                     type="text"
                     placeholder="Nombre del libro"
-                    className="border rounded-full p-3 ml-4 pr-10 focus:outline-none text-purple-600 bg-white"
+                    className="border rounded-full p-3 ml-32 pr-10 focus:outline-none text-purple-600 bg-white"
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                     onKeyPress={searchBook}

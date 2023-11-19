@@ -27,9 +27,8 @@ function Mapa() {
 
                     <a href="/mapa" className="flex items-center text-blue-700 -px-2 hover:underline font-bold">
                         <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mx-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 2c-2.21 0-4 1.79-4 4 0 2.21 1.79 4 4 4 2.21 0 4-1.79 4-4 0-2.21-1.79-4-4-4zM12 18c-1.74 0-3.29-1.01-4-2.48C7.29 14.71 9.1 14 12 14s4.71.71 4 1.52c-.71 1.47-2.26 2.48-4 2.48zM12 12a2 2 0 100-4 2 2 0 000 4z"></path>
                         </svg>
-
                         <span className="mx-2">Mapa</span>
                     </a>
                 </div>

@@ -39,7 +39,7 @@ const Modal = ({ show, item, onClose }) => {
               Ver Más
             </a>
           </div>
-          <p className="text-gray-700 text-lg mt-4">{truncatedDescription}</p>
+          <p className="text-gray-800 font-medium text-lg mt-4">{truncatedDescription}</p>
         </div>
       </div>
     </div>

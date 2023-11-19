@@ -116,7 +116,7 @@ function Footer() {
                     <p
                       className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                     >
-                      Características
+                      Ayuda
                     </p>
                   </li>
                 </ul>

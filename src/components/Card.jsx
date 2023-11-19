@@ -25,7 +25,7 @@ const Card = ({ book }) => {
             >
               <img src={thumbnail} alt={item.volumeInfo.title} className="w-full h-48 object-contain" />
               <div className="mt-2">
-                <h3 className="text-lg font-semibold text-gray-800">{item.volumeInfo.title}</h3>
+                <h3 className="text-lg font-semibold  text-gray-800">{item.volumeInfo.title}</h3>
                 <p className="text-sm font-bold text-indigo-600">&#8377;{amount}</p>
               </div>
             </div>

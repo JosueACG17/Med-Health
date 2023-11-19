@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import axios from "axios";
 import imagen from "../img/hospital3.jpeg"
 import "../styles/registro.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 function Registro() {
@@ -14,6 +15,36 @@ function Registro() {
     setShowPassword(!showPassword);
   }
 
+   // Crear usuarios
+   const initialValues = {
+    Nombre: "",
+    Apellido: "",
+    UserName: "",
+    Password: "",
+    isActive: true,
+  };
+
+  const [newuser, setNewUser] = useState(initialValues);
+  const navegacion = useNavigate();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    axios
+      .post("http://localhost:3000/users", newuser)
+      .then((response) => {
+        alert("Usuario creado correctamente");
+        navegacion("/");
+      })
+      .catch((error) => {
+        console.log("Hubo un error al crear usuario", error);
+      });
+  };
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setNewUser({ ...newuser, [name]: value });
+  };
 
   return (
     <>
@@ -27,15 +58,17 @@ function Registro() {
             />
           </div>
           <div className="md:flex md:items-center md:justify-center w-full sm:w-auto md:h-screen w-2/5 xl:w-2/5 p-8 md:p-10 lg:p-14 sm:rounded-lg md:rounded-none bg-white items-center mx-auto">
-            <div className="max-w-md w-full space-y-8 ">
+            <div className="max-w-md w-full space-y-7 ">
               <div className="text-center">
                 <h2 className="text-3xl font-bold text-gray-900">
                   ¡Bienvenido de Nuevo!
                 </h2>
                 <p className="mt-2 text-sm text-blue-700 font-bold">Por favor Regístrate</p>
               </div>
-              <form className="space-y-4" action="#" method="POST">
+
+              <form className="space-y-4" action="#" method="POST" onSubmit={handleSubmit}> 
                 <input type="hidden" name="remember" defaultValue="true" />
+                
                 <div className="relative">
                   <label className="ml-3 text-sm font-bold text-gray-700 tracking-wide">
                     Nombre Completo:
@@ -46,12 +79,17 @@ function Registro() {
                     </svg>
                     <input
                       className="w-full text-base px-4 py-2 border-b border-gray-300 focus:outline-none rounded-2xl focus:border-indigo-500 pl-11"
-                      type="email"
+                      type="text"
+                      id="nombre"
+                      name="Nombre"
+                      value={newuser.Nombre}
+                      onChange={handleChange}
                       placeholder="Ingresa tu Nombre"
                       required
                     />
                   </div>
                 </div>
+
                 <div className="relative">
                   <label className="ml-3 text-sm font-bold text-gray-700 tracking-wide">
                     Nombre de Usuario:
@@ -63,12 +101,17 @@ function Registro() {
 
                     <input
                       className="w-full text-base px-4 py-2 border-b border-gray-300 focus:outline-none rounded-2xl focus:border-indigo-500 pl-11"
-                      type="email"
+                      type="text"
+                      id="usuario"
+                      name="UserName"
+                      value={newuser.UserName}
+                      onChange={handleChange}
                       placeholder="Ingresa tu Username"
                       required
                     />
                   </div>
                 </div>
+
                 <div className="relative">
                   <label className="ml-3 text-sm font-bold text-gray-700 tracking-wide">
                     Correo Electrónico:
@@ -80,6 +123,10 @@ function Registro() {
                     <input
                       className="w-full text-base px-4 py-2 border-b border-gray-300 focus:outline-none rounded-2xl focus:border-indigo-500 pl-11"
                       type="email"
+                      id="apellido"
+                      name="Apellido"
+                      value={newuser.Apellido}
+                      onChange={handleChange}
                       placeholder="Ingresa tu correo"
                       required
                     />
@@ -99,9 +146,11 @@ function Registro() {
                       className="w-full text-base px-4 py-2 pr-10 border-b rounded-2xl border-gray-300 focus:outline-none focus:border-indigo-500 pl-11"
                       type={showPassword ? 'text' : 'password'}
                       placeholder="Ingresa tu contraseña"
+                      id="password"
+                      name="Password"
                       required
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
+                      value={newuser.Password}
+                      onChange={handleChange}
                     />
                     <button
                       className="absolute inset-y-0 right-0 pr-3 flex items-center"
@@ -114,14 +163,12 @@ function Registro() {
                 </div>
 
                 <div>
-                  <Link to="/">
                     <button
                       type="submit"
                       className="w-full flex mt-8 justify-center bg-gradient-to-r from-indigo-700 to-blue-700 hover:bg-gradient-to-l hover:from-blue-900 hover:to-cyan-900 text-gray-100  p-4 md:p-3 rounded-full tracking-wide font-semibold shadow-lg cursor-pointer transition ease-in duration-500 font-sans"
                     >
                       Registrate
                     </button>
-                  </Link>
                 </div>
                 <p className="flex flex-col items-center justify-center mt-10 font-bold text-center text-md text-gray-700">
                   <span>¿Ya tienes una cuenta?</span>

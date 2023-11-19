@@ -1,9 +1,6 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/no-unescaped-entities */
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { FaHome, FaUsers, FaBriefcase, FaEnvelope } from 'react-icons/fa';
-
+import CartasServicios from "../components/CartasServicios";
 
 function Servicios() {
     return (
@@ -36,7 +33,7 @@ function Servicios() {
                                 Servicios
                             </span>
                         </h2>
-                        <p className="pr-5 mb-5 text-sm font-medium text-justify text-gray-800 md:text-lg">
+                        <p className="pr-5 mb-5 text-justify font-medium text-gray-800 md:text-lg">
                             En Med-Health nos preocupamos por todos nuestros usuarios y procuramos entregarles los mejores servicios, para atención médica y psicológica, por lo que tenemos una actitud de servicio en pro del bienestar de los derechoambientes, para esto ofrecemos los siguientes servicios:
                         </p>
                     </div>
@@ -55,7 +52,7 @@ function Servicios() {
                     <span className="sm:block"> Puedes Encontrar</span>
                 </h1>
 
-                <p className="mx-auto mt-4 text-justify max-w-xl sm:text-lg/relaxed">
+                <p className="mx-auto mt-4 p-3 text-justify font-medium max-w-xl sm:text-lg/relaxed">
                     Descubre una gama de servicios diseñados para cubrir tus necesidades.
                     Explora nuestros servicios y encuentra soluciones a medida que te harán la vida más conveniente y eficiente.
                 </p>
@@ -63,119 +60,8 @@ function Servicios() {
             </div>
 
             {/*CARTAS */}
-            <section className="text-gray-600 body-font text-justify">
-                <div className="container px-5 py-10 mx-auto">
-                    <div className="flex flex-wrap w-full mb-8">
-                        <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-                        </div>
+            <CartasServicios></CartasServicios>
 
-                        <div className="flex flex-wrap -m-4">
-
-                            <div className="xl:w-1/2 md:w-1/2 p-4">
-                                <div className="bg-gray-300 p-6 rounded-lg">
-                                    <a
-                                        href="/libreria"
-                                        className="flex flex-col items-center bg-blue-700 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 hover:bg-violet-900"
-                                    >
-                                        <img
-                                            className="object-cover w-full rounded-t-lg h-92 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                                            src="https://images.pexels.com/photos/8199629/pexels-photo-8199629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                            alt=""
-                                        />
-                                        <div className="flex flex-col justify-between p-4 leading-normal">
-                                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
-                                                Nuestra Librería
-                                            </h5>
-                                            <p className="mb-3 font-normal text-white dark:text-white">
-                                                En este apartado de nuestros servicios, ofrecemos a todos nuestros usuarios,
-                                                la oportunidad de acceder de manera completamente gratuita a nuestra libreria,
-                                                para que se sientan libres de leer los libros que necesiten, contando con una amplía gama de libros para fomentar la auto ayuda y el auto descubrimiento.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div className="xl:w-1/2 md:w-1/2 p-4">
-                                <div className="bg-gray-300 p-6 rounded-lg">
-                                    <a
-                                        href="/companieros"
-                                        className="flex flex-col items-center  bg-blue-700 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 hover:bg-violet-900"
-                                    >
-                                        <img
-                                            className="object-cover w-full rounded-t-lg h-92 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                                            src="https://images.pexels.com/photos/8131025/pexels-photo-8131025.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"                                            
-                                            alt=""
-                                        />
-                                        <div className="flex flex-col justify-between p-4 leading-normal">
-                                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
-                                                Compañia para ti
-                                            </h5>
-                                            <p className="mb-3 font-normal text-gray-700 dark:text-white">
-                                            En nuestro equipo, creemos que la comunicación y el efecto es clave para el éxito. 
-                                            Trabajamos juntos con nuestras mascotas para asegurarnos de que nuestros clientes reciban el acompañamiento que necesitan.
-                                            Nos enorgullece trabajar juntos y de hacer una diferencia en la vida de nuestros clientes
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div className="xl:w-1/2 md:w-1/2 p-4">
-                                <div className="bg-gray-300 p-6 rounded-lg">
-                                    <a
-                                        href="/mapa"
-                                        className="flex flex-col items-center bg-blue-700 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 hover:bg-violet-900"
-                                    >
-                                        <img
-                                            className="object-cover w-full rounded-t-lg h-92 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                                            src="https://i.pinimg.com/236x/5b/4b/09/5b4b09f480e6e6029ad9398bf324db77.jpg"
-                                            alt=""
-                                        />
-                                        <div className="flex flex-col justify-between p-4 leading-normal">
-                                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
-                                                Mapa Hospitales
-                                            </h5>
-                                            <p className="mb-3 font-normal text-gray-700 dark:text-white">
-                                            Bienvenido a nuestra red de hospitales comprometidos con tu salud y bienestar, aventurate entre todos
-                                             nuestros centros médicos que están estratégicamente ubicados para brindarte acceso rápido y conveniente a servicios de calidad.
-                                             Confía en nosotros para cuidar de ti y tus seres queridos en cada paso de tu camino hacia la salud.
-
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div className="xl:w-1/2 md:w-1/2 p-4">
-                                <div className="bg-gray-300 p-6 rounded-lg">
-                                    <a
-                                        href="/noticias"
-                                        className="flex flex-col items-center bg-blue-700 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 hover:bg-violet-900"
-                                    >
-                                        <img
-                                            className="object-cover w-full rounded-t-lg h-92 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                                            src="https://images.pexels.com/photos/8199629/pexels-photo-8199629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                            alt=""
-                                        />
-                                        <div className="flex flex-col justify-between p-4 leading-normal">
-                                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
-                                                Nuestras Noticias
-                                            </h5>
-                                            <p className="mb-3 font-normal text-gray-700 dark:text-white">
-                                                En este apartado de nuestros servicios, ofrecemos a todos nuestros usuarios,
-                                                la oportunidad de acceder de manera completamente gratuita a nuestra libreria,
-                                                para que se sientan libres de leer los libros que necesiten, contando con una amplía gama de libros para fomentar la auto ayuda y el auto descubrimiento.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
 
             <Footer></Footer>
 

@@ -11,7 +11,9 @@ import Dashboard from './pages/Dashboard';
 import TablaUsers from './pages/Tabla-users';
 import Companieros from './pages/Companieros';
 import Modal from './components/Modal';
-import Perfil from './pages/Perfil-User';
+import KittyCarousel from './components/KittyCarousel';
+import DogCarousel from './components/DogCarousel';
+import NewsAPI from './pages/Noticias';
 import Mapa from './pages/Mapa';
 import Noticias from './pages/Noticias';
 
@@ -29,12 +31,14 @@ function App() {
         <Route path='/libreria' element={<Libreria />} />
         <Route path='/mapa' element={<Mapa />} />
         <Route path='/noticias' element={<Noticias />} />
-        <Route path= '/perfil' element={<Perfil />} />
         <Route path='/dashboard' element={<Dashboard/>} />
         <Route path='/usuarios' element={<TablaUsers/>} />
         <Route path='/companieros' element={<Companieros />} />
         <Route path='/modal' element={<Modal/>}/>
+        <Route path='/Carousel' element={<KittyCarousel/>}/>
+        <Route path='/dog' element={<DogCarousel/>}/>
         <Route path='*' element={<Error />} />
+        <Route path='/noticias' element={<NewsAPI />}/>
       </Routes>
     </BrowserRouter>
   );

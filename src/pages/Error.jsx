@@ -24,7 +24,7 @@ function Error() {
 
                         <a
                             className="group relative inline-flex items-center overflow-hidden rounded bg-blue-800 px-10 py-3 ml-3 text-white focus:outline-none focus:ring active:bg-indigo-500"
-                            href="/nosotros"
+                            href="/home"
                         >
                             <span className="absolute -end-full transition-all group-hover:end-4">
                                 <svg

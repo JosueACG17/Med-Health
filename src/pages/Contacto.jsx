@@ -145,7 +145,7 @@ function Contacto() {
                                             <input
                                                 type="text"
                                                 name="user_name"
-                                                placeholder="Rafael Mendoza"
+                                                placeholder="Escribe tu nombre"
                                                 className="block w-full px-5 py-3 mt-2 text-semibold text-black bg-white border border-gray-500 rounded-md  focus:border-blue-600 focus:ring-blue-500 focus:ring-opacity-40 dark:focus:border-blue-700 focus:outline-none focus:ring"
                                             />
                                         </div>
@@ -156,7 +156,7 @@ function Contacto() {
                                             <input
                                                 type="email"
                                                 name="user_email"
-                                                placeholder="correoprueba@gmail.com"
+                                                placeholder="Escribe tu correo electronico"
                                                 className="block w-full px-5 py-3 mt-2 text-semibold text-black bg-white border border-gray-500 rounded-md  focus:border-blue-600 focus:ring-blue-500 focus:ring-opacity-40 dark:focus:border-blue-700 focus:outline-none focus:ring"
                                             />
                                         </div>
@@ -167,7 +167,7 @@ function Contacto() {
                                             <textarea
                                                 name="message"
                                                 className="block w-full h-32 px-5 py-3 mt-2 text-semibold text-black placeholder-gray-400 bg-white border border-gray-500 rounded-md md:h-48  focus:border-blue-400 focus:ring-blue-500 focus:ring-opacity-40 dark:focus:border-blue-700 focus:outline-none focus:ring"
-                                                placeholder="Mensaje"
+                                                placeholder="Redactanos tu mensaje"
                                                 defaultValue={""}
                                             />
                                         </div>

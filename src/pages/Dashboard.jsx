@@ -162,7 +162,7 @@ function Dashboard() {
         {/* Cartas contenedir */}
 
         <div className="carta-cont">
-          <h1 className="main-title text-blue-800">Datos</h1>
+          <h1 className="main-title text-blue-800 font-bold text-2xl">DATOS</h1>
           <div className="carta-wrapper">
 
             <div className="carta-payment light-green">
@@ -213,7 +213,7 @@ function Dashboard() {
 
         {/* Tabla */}
         <div className="tabla-wrapper">
-          <h3 className="tabla-titulo text-blue-800">APIs Del Proyecto</h3>
+          <h3 className="tabla-titulo text-blue-800 text-2xl font-bold">APIS Del Proyecto:</h3>
           <div className="tabla-cont ">
             <table>
               <thead className='text-white font-bold bg-blue-800'>
@@ -226,38 +226,38 @@ function Dashboard() {
               </thead>
               <tbody>
                 <tr>
-                  <td>Google</td>
+                  <td className='font-bold'>Google</td>
                   <td>Esta API ofrece una forma segura y confiable de autenticación, permitiendo a los usuarios iniciar sesión en la plataforma con sus cuentas de Google existentes.</td>
-                  <td>Disponible</td>
-                  <td>Login</td>
+                  <td className='text-green-700 font-bold'>Disponible</td>
+                  <td className='tdcat'>Login</td>
                 </tr>
 
                 <tr>
-                  <td>Facebook</td>
+                  <td className='font-bold'>Facebook</td>
                   <td>Esta API permite a los usuarios iniciar sesión en sus cuentas de Med-Health utilizando sus credenciales de Facebook.</td>
-                  <td>Disponible</td>
-                  <td>Login</td>
+                  <td className='text-green-700 font-bold'>Disponible </td>
+                  <td className='tdcat'>Login</td>
                 </tr>
 
                 <tr>
-                  <td>EmailJS</td>
+                  <td className='font-bold'>EmailJS</td>
                   <td>Esta API permite a nuestro sistema de salud y medicina enviar notificaciones por correo electrónico de manera eficiente, lo que garantiza una comunicación efectiva con nuestros usuarios y profesionales de la salud.</td>
-                  <td>Disponible</td>
-                  <td>Comunicación</td>
+                  <td className='text-green-700 font-bold'>Disponible</td>
+                  <td className='tdcat'>Comunicación</td>
                 </tr>
 
                 <tr>
-                  <td>Google Books</td>
+                  <td className='font-bold'>Google Books</td>
                   <td>Esta API permite a los usuarios buscar, explorar y obtener información detallada sobre libros relacionados con la salud y la medicina.</td>
-                  <td>Disponible</td>
-                  <td>Información</td>
+                  <td className='text-green-700 font-bold'>Disponible</td>
+                  <td className='tdcat'>Información</td>
                 </tr>
 
                 <tr>
-                  <td>GitHub</td>
+                  <td className='font-bold'>GitHub</td>
                   <td>La API de inicio de sesión de GitHub, que permite a los usuarios autenticarse utilizando sus cuentas de GitHub.</td>
-                  <td>Disponible</td>
-                  <td>Login</td>
+                  <td className='text-green-700 font-bold text-center'>Disponible</td>
+                  <td className='tdcat'>Login</td>
                 </tr>
               </tbody>
             </table>

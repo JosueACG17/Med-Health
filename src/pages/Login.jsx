@@ -3,7 +3,6 @@ import imagen from "../img/doctoraa.png"
 import "../styles/login.css";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import BGoogle from '../components/BGoogle';
-import BGithub from '../components/BGithub';
 import BFacebook from '../components/BFacebook'
 
 function Login() {

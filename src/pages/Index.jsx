@@ -19,10 +19,10 @@ function Index() {
           className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:h-screen lg:items-center lg:px-8"
         >
           <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-            <h1 className="text-3xl font-extrabold sm:text-5xl text-center" >
+            <h1 className="text-4xl font-extrabold sm:text-5xl text-center" >
               ¡En Med-Health lo imposible,
 
-              <strong className="block font-extrabold text-rose-600" >
+              <strong className="block font-extrabold text-red-800" >
                 Es posible!
               </strong>
             </h1>
@@ -44,8 +44,8 @@ function Index() {
                 <div className="flex-1">
                   <div className="block mt-2 space-y-6">
                     <h3 className="text-2xl font-semibold leading-none tracking-tighter text-black text-center">Servicios</h3>
-                    <p className="text-lg font-normal text-gray-700 text-justify">
-                      "Cuidamos de tu salud. Nuestros servicios médicos están diseñados pensando en ti y tu bienestar."
+                    <p className="text-lg font-medium text-gray-800 text-justify">
+                      Cuidamos de tu salud. Nuestros servicios médicos están diseñados pensando en ti y tu bienestar.
                     </p>
                   </div>
                 </div>
@@ -60,8 +60,8 @@ function Index() {
                 <div className="flex-1">
                   <div className="block mt-2 space-y-6">
                     <h3 className="text-2xl font-semibold leading-none tracking-tighter  text-black   text-center">Medicamentos</h3>
-                    <p className="text-lg font-normal text-justify text-gray-700">
-                      "En nuestro sitio, encontrarás información precisa y actualizada sobre una amplia variedad de medicamentos."
+                    <p className="text-lg font-medium text-justify text-gray-800">
+                      En nuestro sitio, encontrarás información precisa y actualizada sobre una amplia variedad de medicamentos.
                     </p>
                   </div>
                 </div>
@@ -76,8 +76,8 @@ function Index() {
                 <div className="flex-1">
                   <div className="block mt-2 space-y-6">
                     <h3 className="text-2xl font-semibold leading-none tracking-tighter  text-black text-center">Información</h3>
-                    <p className="text-lg font-normal text-justify text-gray-700">
-                      "Te proporcionamos contenido preciso y actualizado sobre una amplia gama de temas médicos."
+                    <p className="text-lg font-medium text-justify text-gray-800">
+                      Te proporcionamos contenido preciso y actualizado sobre una amplia gama de temas médicos.
                     </p>
                   </div>
                 </div>
@@ -93,8 +93,8 @@ function Index() {
                 <div className="flex-1">
                   <div className="block mt-2 space-y-6">
                     <h3 className="text-2xl font-semibold leading-none tracking-tighter  text-black  text-center">Hospitales</h3>
-                    <p className="text-lg font-normal text-justify text-gray-700">
-                      "Queremos ayudarte a encontrar el lugar adecuado para tu atención médica. Tu salud y bienestar son nuestra prioridad."
+                    <p className="text-lg font-medium text-justify text-gray-800">
+                      Queremos ayudarte a encontrar el lugar adecuado para tu atención médica. Tu salud y bienestar son nuestra prioridad.
                     </p>
                   </div>
                 </div>
@@ -111,20 +111,19 @@ function Index() {
 
             <div className="bg-blue-700 p-8 md:p-12 lg:px-16 lg:py-24 rounded-lg">
               <div className="mx-auto max-w-xl text-center">
-                <h2 className="text-2xl font-bold text-white md:text-3xl">
+                <h2 className="text-4xl font-bold text-white md:text-3xl">
                   Bienvenido a Med-Health
                 </h2>
 
-                <p className="hidden text-white/90 sm:mt-4 sm:block text-justify">
+                <p className="hidden font-medium text-white/90 sm:mt-4 sm:block text-justify">
                   En Med-Health, estamos comprometidos a proporcionarte información médica confiable y basada en evidencia. Nuestro sitio web es tu fuente confiable para todo lo relacionado con la salud y la medicina. Nos esforzamos por desmitificar conceptos complejos, responder tus preguntas y brindarte orientación experta para que tomes decisiones informadas sobre tu bienestar.
                 </p>
                 <br></br>
-                <h3 className="text-2xl font-bold text-white ">¿Qué puedes encontrar en Med-Health?</h3>
-                <ul className="hidden text-white/90 sm:mt-4 sm:block text-justify icon-list">
+                <h3 className="text-2xl font-bold text-white ">¿Qué puedes encontrar?</h3>
+                <ul className="hidden font-medium text-white/90 sm:mt-4 sm:block text-justify icon-list">
                   <li>Artículos médicos escritos por expertos en salud.</li>
-                  <li>Información sobre enfermedades, síntomas y tratamientos.</li>
                   <li>Consejos para llevar un estilo de vida saludable.</li>
-                  <li>Noticias y avances en el campo de la medicina.</li>
+                  <li>Noticias, información y avances en el campo de la medicina.</li>
                   <li>Recursos para pacientes y sus familias.</li>
                 </ul>
               </div>
@@ -171,8 +170,8 @@ function Index() {
             </div>
 
             <div className="h-4/6">
-              <article className="space-y-2 text-gray-800">
-                <p className="text-justify">
+              <article className="space-y-2 text-gray-900">
+                <p className="text-justify font-normal">
                   En nuestro continuo compromiso de brindar información valiosa sobre salud y bienestar, te invitamos a explorar Med-Health.
                   Esta página es tu puerta de entrada a un mundo de conocimiento médico y recursos útiles.
                 </p>
@@ -242,8 +241,8 @@ function Index() {
 
             <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
               <a
-                className="bloque block rounded-xl border-2 border-blue-900 p-6 shadow-xl transition hover:border-black"
-                href="/servicios"
+                className="bloque block rounded-xl border-2 border-blue-900 p-6 shadow-xl transition hover:border-black hover:shadow-blue-700"
+                href="/companieros"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -264,18 +263,17 @@ function Index() {
                   />
                 </svg>
 
-                <h2 className="mt-3 text-xl font-bold text-black  text-center">Servicios</h2>
+                <h2 className="mt-3 text-xl font-bold text-black  text-center">Servicio de Compañia</h2>
 
-                <p className="mt-3 text-sm font-medium text-black  text-justify">
-                  Nuestro servicio de "Servicios Médicos" se basa en la integración de APIs externas confiables. Ofrecemos a nuestros usuarios acceso a una amplia gama de servicios médicos,
-                  desde consultas virtuales hasta programación de citas médicas y servicios especializados. A través de esta función,
-                  los usuarios pueden conectarse con profesionales de la salud y obtener el apoyo que necesitan.
+                <p className="mt-3 text-sm font-medium text-black text-justify">
+                  Nuestro servicio de "Terapia Asistida con Animales" ofrece compañía con animales. A través de esta función,
+                  las compañías pueden conectar a sus usuarios con profesionales de la salud y obtener el apoyo necesario, utilizando la presencia de gatos y perros como parte integral de la terapia.
                 </p>
               </a>
 
               <a
-                className="bloque block rounded-xl border-2 border-blue-900  p-6 shadow-xl transition hover:border-black "
-                href="/servicios"
+                className="bloque block rounded-xl border-2 border-blue-900  p-6 shadow-xl transition hover:border-black  hover:shadow-blue-700"
+                href="/libreria"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -296,18 +294,18 @@ function Index() {
                   />
                 </svg>
 
-                <h2 className="mt-3 text-xl font-bold text-black  text-center">Información Médica</h2>
+                <h2 className="mt-3 text-xl font-bold text-black  text-center">Libreria</h2>
 
                 <p className="mt-3 text-sm	font-medium text-black  text-justify">
-                  Se enfoca en proporcionar a nuestros usuarios información precisa y actualizada sobre una variedad de temas médicos y de salud.
-                  Nuestra plataforma utiliza APIs que ofrecen artículos, libros y recursos educativos verificados por expertos. Los usuarios pueden explorar información médica confiable
+                  Nuestra librería se enfoca en proporcionar a nuestros usuarios información precisa y actualizada sobre una variedad de temas médicos y de salud.
+                  Utilizamos APIs que ofrecen libros y recursos educativos verificados por expertos. Los usuarios pueden explorar información médica confiable
                   y basada en evidencia, lo que les permite tomar decisiones informadas sobre su bienestar y salud.
                 </p>
               </a>
 
               <a
-                className="bloque block rounded-xl border-2 border-blue-900  p-6 shadow-xl transition hover:border-black "
-                href="/servicios"
+                className="bloque block rounded-xl border-2 border-blue-900  p-6 shadow-xl transition hover:border-black hover:shadow-blue-700"
+                href="/mapa"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -338,8 +336,8 @@ function Index() {
               </a>
 
               <a
-                className="bloque block rounded-xl border-2 border-blue-900  p-6 shadow-xl transition hover:border-black"
-                href="/servicios"
+                className="bloque block rounded-xl border-2 border-blue-900  p-6 shadow-xl transition hover:border-black hover:shadow-blue-700"
+                href="/noticias"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -360,12 +358,12 @@ function Index() {
                   />
                 </svg>
 
-                <h2 className="mt-3 text-xl font-bold text-black  text-center">Medicina</h2>
+                <h2 className="mt-3 text-xl font-bold text-black  text-center">Noticias</h2>
 
                 <p className="mt-3 text-sm	font-medium text-black  text-justify">
                   Se dedica a ofrecer información general sobre el campo de la medicina. Los usuarios pueden explorar una amplia gama de temas médicos,
-                  desde anatomía y fisiología hasta investigaciones médicas actuales y tendencias de salud. Esta sección
-                  es un recurso educativo valioso para aquellos interesados en ampliar su comprensión de la medicina y la ciencia de la salud.
+                  investigaciones médicas actuales y tendencias de salud. Esta sección
+                  es un recurso educativo valioso para aquellos interesados en ampliar su comprensión de la medicina y la ciencia de la salud, asi como estar al tanto de las noticias de salud más recientes.
                 </p>
               </a>
             </div>

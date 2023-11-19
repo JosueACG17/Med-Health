@@ -41,7 +41,7 @@ function Cartas(){
     return(
         <>
         <div id="cardsSection" className="flex items-center justify-center mt-11 mb-9">
-                <p className="text-4xl text-center font-bold">
+                <p className="text-5xl text-center font-bold">
                     SOBRE{" "}
                     <span className="border-b-4 border-purple-400 text-blue-700">NOSOTROS</span>
                 </p>
@@ -66,8 +66,6 @@ function Cartas(){
                                     loop
                                     muted
                                     className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
-                                    onMouseEnter={event => event.target.play()}
-                                    onMouseLeave={event => event.target.pause()}
                                 />
 
                                 <div className="relative p-4 sm:p-6 lg:p-8">
