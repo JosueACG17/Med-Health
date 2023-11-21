@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import imagen from "../img/doctoraa.png"
 import "../styles/login.css";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import BGoogle from '../components/BGoogle';
-import BFacebook from '../components/BFacebook'
+import BFacebook from '../components/BFacebook';
 
 function Login() {
+    const navegacion = useNavigate();
     const text = "Bienvenido a            Med-Health";
     const [animatedText, setAnimatedText] = useState('');
+    const [mostrarAlert, setMostrarAlert] = useState(false);
 
     useEffect(() => {
         let currentIndex = 0;
@@ -28,6 +31,38 @@ function Login() {
         e.preventDefault();
         setShowPassword(!showPassword);
     }
+
+    //Iniciar sesion
+    const [email, setEmail] = useState(''); // Estado para el correo electrónico
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        try {
+            const response = await fetch('http://localhost:3000/users/login', { // Asume que esta es la ruta correcta
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ Apellido: email, Password: password }), // Asume que estos campos coinciden con tu DTO en el backend
+            });
+
+            const data = await response.json();
+            if (response.ok) {
+                // Almacenar datos del usuario en el local storage
+                localStorage.setItem('userRegistered', JSON.stringify(data));
+
+                // Manejar inicio de sesión exitoso aquí, como almacenar el token
+                console.log('Inicio de sesión exitoso:', data);
+                navegacion('/home');
+                
+            } else {
+                console.log('Error en el inicio de sesión');
+            }
+        } catch (err) {
+            console.log("Email o contrasenia incorrecta");
+            setMostrarAlert(true);
+        }
+    };
 
     return (
         <>
@@ -76,9 +111,29 @@ function Login() {
                                 <h2 className="text-3xl font-bold text-blue-900 font-serif">
                                     Inicia Sesión
                                 </h2>
+                            {mostrarAlert && (
+                            <div class="w-full text-white bg-red-500 rounded-lg my-6">
+                                <div class="container flex items-center justify-between px-6 py-4 mx-auto">
+                                    <div class="flex">
+                                        <svg viewBox="0 0 40 40" class="w-6 h-6 fill-current">
+                                            <path d="M20 3.36667C10.8167 3.36667 3.3667 10.8167 3.3667 20C3.3667 29.1833 10.8167 36.6333 20 36.6333C29.1834 36.6333 36.6334 29.1833 36.6334 20C36.6334 10.8167 29.1834 3.36667 20 3.36667ZM19.1334 33.3333V22.9H13.3334L21.6667 6.66667V17.1H27.25L19.1334 33.3333Z">
+                                            </path>
+                                        </svg>
+
+                                        <p class="mx-3">Correo electrónico o contraseña incorrecta</p>
+                                    </div>
+
+                                    <button class="p-1 transition-colors duration-300 transform rounded-md hover:bg-opacity-25 hover:bg-gray-600 focus:outline-none" onClick={() => setMostrarAlert(false)}>
+                                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6 18L18 6M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            )}
                             </div>
 
-                            <form className="space-y-6" action="#" method="POST">
+                            <form className="space-y-6" action="#" method="POST" onSubmit={handleSubmit}>
                                 <input type="hidden" name="remember" defaultValue="true" />
                                 <div className="relative">
                                     <label className="ml-3 text-sm font-bold text-gray-800 tracking-wide">
@@ -91,6 +146,8 @@ function Login() {
                                         <input
                                             className="w-full text-base px-4 py-2 border-b border-gray-600 focus:outline-none rounded-2xl focus:border-indigo-500 pl-11"
                                             type="email"
+                                            value={email}
+                                            onChange={(e) => setEmail(e.target.value)}
                                             placeholder="Ingresa tu correo"
                                             required
                                         />

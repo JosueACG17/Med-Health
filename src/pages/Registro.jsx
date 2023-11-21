@@ -34,6 +34,8 @@ function Registro() {
       .post("http://localhost:3000/users", newuser)
       .then((response) => {
         alert("Usuario creado correctamente");
+        // Almacenar datos del usuario en el local storage
+        localStorage.setItem('userRegistered', JSON.stringify(response.data));
         navegacion("/");
       })
       .catch((error) => {

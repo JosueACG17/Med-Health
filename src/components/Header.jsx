@@ -7,8 +7,11 @@ import { googleLogout } from '@react-oauth/google';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const [profile, setProfile] = useState(JSON.parse(localStorage.getItem('userProfile')) || {});
+  const [profile, setProfile] = useState(JSON.parse(localStorage.getItem('userProfile')) || JSON.parse(localStorage.getItem('userRegistered')) || JSON.parse(localStorage.getItem("respuestaFacebook")) || {});
   const respuesta = JSON.parse(localStorage.getItem("respuestaFacebook"));
+  
+  console.log("Profile: ", profile);
+  console.log("Respuesta: ", respuesta);
 
   {/*CERRAR SESION GOOGLE */ }
   const logOut = () => {
@@ -23,9 +26,15 @@ function Header() {
 
   };
 
+  {/* CERRAR SESION CON DATOS REGISTRADOS */}
+  const logoutRegistered = () => {
+    localStorage.removeItem("userRegistered");
+};
+
   const handleLogout = () => {
     logoutFacebook(); // Llama a la función para cerrar sesión en Facebook
     logOut(); // Llama a la función para cerrar sesión en Google
+    logoutRegistered();
   };
 
 
@@ -57,9 +66,9 @@ function Header() {
                 onClick={() => setIsOpen(!isOpen)}
               >
                 <span className="sr-only">Menu</span>
-                <img alt="Perfil" src={profile.picture || imagen || respuesta.picture.data.url} className="h-10 w-10 rounded-full border-2 border-blue-800 object-cover" />
+                <img alt="Perfil" src={profile?.picture || imagen || respuesta?.picture.data.url} className="h-10 w-10 rounded-full border-2 border-blue-800 object-cover" />
                 <p className="ms-2 hidden text-left text-xs sm:block">
-                  <strong className="block font-medium text-base	">{profile.name || respuesta.name}</strong>
+                  <strong className="block font-medium text-base	">{profile?.name || respuesta?.name || profile?.Nombre}</strong>
                 </p>
                 <svg xmlns="http://www.w3.org/2000/svg" className="ms-4  h-5 w-5 text-gray-500 transition group-hover:text-gray-700 sm:block" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
@@ -69,13 +78,13 @@ function Header() {
 
                   <div className="origin-top-right bg-white absolute mt-80 w-80 rounded-md shadow-lg overflow-hidden" style={{ right: 0, overflowX: 'auto', zIndex: 2 }}>
                     <div className="text-center text-white font-semibold mb-1">
-                      ¡Hola, {profile.given_name || respuesta.name}!
+                      ¡Hola, {profile?.given_name || respuesta?.name || profile?.UserName}!
                     </div>
-                    <img className="ml-28 rounded-lg mb-1 h-24 w-24 " src={profile.picture|| imagen || respuesta.picture.data.url} alt="user image" />
+                    <img className="ml-28 rounded-lg mb-1 h-24 w-24 " src={profile?.picture || imagen || respuesta?.picture.data.url} alt="user image" />
                     <p className='text-blue-800 font-semibold'>Nombre:</p>
-                    <p className='font-medium'>{profile.name || respuesta.name}</p>
+                    <p className='font-medium'>{profile?.name || respuesta?.name || profile?.Nombre}</p>
                     <p className='text-blue-800 font-semibold'>Correo Electrónico:</p>
-                    <p className='mb-1 font-medium '>{profile.email || respuesta.email}</p>
+                    <p className='mb-1 font-medium '>{profile?.email || respuesta?.email || profile?.Apellido}</p>
                     <a
                       href="/"
                       onClick={handleLogout}

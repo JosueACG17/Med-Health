@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import MenuDash from "../components/MenuDash";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass, faUsers, faBookMedical, faKitMedical, faUserPlus } from '@fortawesome/free-solid-svg-icons';
@@ -6,6 +6,27 @@ import "../styles/dashboard.css";
 
 function Dashboard() {
   const profile= JSON.parse(localStorage.getItem('userProfile')) || {};
+
+  //Contador de usuarios
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    fetch('http://localhost:3000/users/count')
+      .then(response => {
+        if (!response.ok) {
+            // Manejar respuestas no exitosas
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        setCount(data.count);
+        console.log(data);
+      })
+      .catch(error => {
+        console.error('Error al obtener el conteo de usuarios:', error);
+      });
+}, []);
 
   return (
     <>
@@ -159,17 +180,17 @@ function Dashboard() {
             </div>
           </div>
         </header>
-        {/* Cartas contenedir */}
+        {/* Cartas contenedor */}
 
         <div className="carta-cont">
           <h1 className="main-title text-blue-800 font-bold text-2xl">DATOS</h1>
           <div className="carta-wrapper">
-
+            
             <div className="carta-payment light-green">
               <div className="carta-header">
                 <div className="amount">
                   <span className="ctitulo font-bold">Usuarios:</span>
-                  <span className="amount-valor font-medium">1356</span>
+                  <span className="amount-valor font-medium">{count || "0"}</span>
                 </div>
                 <i className="cartaicon"><FontAwesomeIcon icon={faUsers} /></i>
               </div>

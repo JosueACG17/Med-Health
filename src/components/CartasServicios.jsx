@@ -3,7 +3,7 @@ import React from "react";
 function CartasServicios() {
     return (
         <>
-            <section className="text-gray-600 body-font text-justify">
+            <section className="text-gray-600 body-font text-justify px-10">
                 <div className="container px-2 py-8 mx-auto">
                     <div className="flex flex-wrap w-full mb-8">
                         <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
