@@ -111,7 +111,7 @@ const NewsAPI = () => {
           {visible < news.length && (
             <div className="text-center mt-8">
               <button onClick={loadMore} className="bg-blue-800 text-white px-4 py-2 rounded transition duration-300 hover:bg-black">
-                Cargar más
+                Ver más
               </button>
             </div>
           )}

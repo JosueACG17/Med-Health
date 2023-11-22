@@ -9,11 +9,29 @@ function MenuDash (){
 
     const [profile, setProfile] = useState(JSON.parse(localStorage.getItem('userProfile')) || {});
 
-    const logOut = () => {
-      googleLogout();
-      localStorage.removeItem('userProfile');
-      setProfile([]);
-    };
+     {/*CERRAR SESION GOOGLE */ }
+  const logOut = () => {
+    googleLogout();
+    localStorage.removeItem('userProfile');
+    setProfile([]);
+  };
+
+  {/*CERRAR SESION CON FACEBOOK */}
+  const logoutFacebook = () => {
+    localStorage.removeItem("respuestaFacebook");
+
+  };
+
+  {/* CERRAR SESION CON DATOS REGISTRADOS */}
+  const logoutRegistered = () => {
+    localStorage.removeItem("userRegistered");
+};
+
+    const handleLogout = () => {
+        logoutFacebook(); // Llama a la función para cerrar sesión en Facebook
+        logOut(); // Llama a la función para cerrar sesión en Google
+        logoutRegistered();
+      };
 
     return(
         <>
@@ -44,7 +62,7 @@ function MenuDash (){
                 </li>
 
                 <li>
-                    <a onClick={logOut} href="/">
+                    <a onClick={handleLogout} href="/">
                         <i><FontAwesomeIcon icon={faRightFromBracket} /></i>
                         <span>Cerrar Sesión</span>
                     </a>

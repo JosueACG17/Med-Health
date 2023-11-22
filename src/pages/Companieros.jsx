@@ -47,13 +47,13 @@ const Companieros = () => {
                 </div>
             </div>
 
-            <section className="bg-white dark:bg-gray-900">
+            <section className="bg-white">
                 <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-12 grid lg:grid-cols-2 gap-8 lg:gap-16">
                     <div className="flex flex-col justify-center">
-                        <h1 className="mb-4 text-4xl font-extrabold tracking-tight text-center leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+                        <h1 className="mb-4 text-4xl font-extrabold tracking-tight text-center leading-none text-gray-900 md:text-5xl lg:text-6xl">
                             Nuestros héroes no necesitan capa
                         </h1>
-                        <p className="mb-8 text-lg font-normal text-justify text-gray-500 lg:text-xl dark:text-gray-400">
+                        <p className="mb-8 text-lg font-normal text-justify text-gray-800 lg:text-xl ">
                             Cada uno de nuestros héroes pueden abrir las puertas a un mundo más feliz
                             y pacífico, a veces los héroes tienen otro origen.
                         </p>
@@ -80,14 +80,14 @@ const Companieros = () => {
 
                     </div>
                     <div>
-                        <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">
-                            Nuestros Gatitos Compañeros
+                        <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl  text-center">
+                            Nuestros Gatitos Estrella
                         </h2>
                         <KittyCarousel></KittyCarousel>
                     </div>
                     <div>
-                        <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">
-                            Nuestros Perritos Compañeros
+                        <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl text-center">
+                            Nuestros Perritos Estrella
                         </h2>
                         <DogCarousel></DogCarousel>
                     </div>
