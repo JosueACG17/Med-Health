@@ -4,6 +4,7 @@ import { faHouse, faUser, faList, faRightFromBracket, faDoorOpen } from '@fortaw
 import { googleLogout } from '@react-oauth/google';
 import logo from "../img/logo.png"
 import "../styles/menu.css";
+import Clima from "../components/Clima";
 
 function MenuDash (){
 
@@ -67,6 +68,7 @@ function MenuDash (){
                         <span>Cerrar Sesión</span>
                     </a>
                 </li>
+                <Clima></Clima>
             </ul>
         </div>
         </>

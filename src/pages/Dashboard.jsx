@@ -129,7 +129,7 @@ function Dashboard() {
                   <p className="ms-2 hidden text-left text-xs sm:block">
                     <strong className="block font-medium">{profile.name || respuesta.name || "Nombre admin"}</strong>
 
-                    <span className="text-gray-500">{profile.email || respuesta.email|| "correo@gmail.com"}  </span>
+                    <span className="text-gray-500">{profile.email || respuesta.email || "correo@gmail.com"}  </span>
                   </p>
                 </button>
               </div>
@@ -258,6 +258,14 @@ function Dashboard() {
                   <td className='text-green-700 font-bold text-center'>Disponible</td>
                   <td className='tdcat'>Noticias</td>
                 </tr>
+
+                <tr>
+                  <td className='font-bold'>OpenWeather API</td>
+                  <td>La API de OpenWeather proporciona información meteorológica actual y pronósticos para ciudades de todo el mundo. Puedes obtener datos como la temperatura, la velocidad del viento, la humedad y más.</td>
+                  <td className='text-green-700 font-bold text-center'>Disponible</td>
+                  <td className='tdcat'>Clima</td>
+                </tr>
+
 
 
               </tbody>
