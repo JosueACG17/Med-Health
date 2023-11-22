@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "../styles/modalform.css";
 
-function FormMod({onCerrar}){
+function FormMod({onCerrar, onUserAdded}){
     const handleCerrar = () => {
       onCerrar();
     };
@@ -25,8 +25,8 @@ function FormMod({onCerrar}){
     axios
       .post("http://localhost:3000/users", newuser)
       .then((response) => {
-        alert("Usuario creado correctamente");
-
+        handleCerrar();
+        onUserAdded();
       })
       .catch((error) => {
         console.log("Hubo un error al crear usuario", error);

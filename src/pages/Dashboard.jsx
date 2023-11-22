@@ -127,9 +127,9 @@ function Dashboard() {
                   />
 
                   <p className="ms-2 hidden text-left text-xs sm:block">
-                    <strong className="block font-medium">{profile.name || respuesta.name || "Nombre admin"}</strong>
+                    <strong className="block font-medium">{profile?.given_name || respuesta?.name || profile?.UserName || "Admin"}</strong>
 
-                    <span className="text-gray-500">{profile.email || respuesta.email || "correo@gmail.com"}  </span>
+                    <span className="text-gray-500">{profile?.email || respuesta?.email || profile?.Apellido || "correo@gmail.com"}</span>
                   </p>
                 </button>
               </div>
@@ -137,7 +137,7 @@ function Dashboard() {
 
             <div className="mt-8">
               <h1 className="text-2xl font-bold text-blue-800 sm:text-3xl">
-                ¡Bienvenido {profile.name}!
+                ¡Bienvenido {profile?.name || respuesta?.name || profile?.Nombre || "Admin"}!
               </h1>
 
             </div>
