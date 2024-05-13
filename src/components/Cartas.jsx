@@ -32,9 +32,9 @@ function Cartas(){
             description: 'Liderar la atención médica, impulsando avances innovadores y tecnología de vanguardia para mejorar la salud y el bienestar de la comunidad. Buscamos ser un referente en el campo de la salud, donde los pacientes puedan confiar en nosotros.',
         },
         {
-            title: 'Experiencia',
+            title: 'Valores',
             image: "https://player.vimeo.com/external/361093261.sd.mp4?s=c1c79c56133947abc893c2fc49e235ebe8e07896&profile_id=164&oauth2_token_id=57447761",
-            description: 'Con más de 30 años de experiencia en la salud, Med-Health ha sido un pilar, brindando atención médica excepcional y apoyo a lo largo del tiempo. Nuestra experiencia se refleja en la confianza que miles de pacientes han depositado en nosotros.',
+            description: 'Compromiso con la Excelencia, Empatía y Compasión, Integridad en la Atención al Paciente, Innovación Continua, Colaboración y Trabajo en Equipo, Enfoque Centrado en el Paciente, Inspirar Confianza, Desarrollo Profesional y Personal.',
         },
     ];
 

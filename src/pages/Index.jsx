@@ -23,7 +23,7 @@ function Index() {
               ¡En Med-Health lo imposible,
 
               <strong className="block font-extrabold text-red-800" >
-                Es posible!
+                es posible!
               </strong>
             </h1>
 
@@ -54,14 +54,14 @@ function Index() {
 
             <div className="rounded-lg flex flex-col mb-12 overflow-hidden transition duration-300 ease-in-out shadow-2xl md:hover:-translate-y-6">
               <div className="flex-shrink-0">
-                <img className="object-cover w-full h-48" src="https://assets1.farmaciasanpablo.com.mx/landings/_blog/spf/nota-851-3.jpg" alt="" />
+                <img className="object-cover w-full h-48" src="https://images.pexels.com/photos/518543/pexels-photo-518543.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
               </div>
               <div className="bg-white flex flex-col justify-between flex-1 p-2">
                 <div className="flex-1">
                   <div className="block mt-2 space-y-6">
-                    <h3 className="text-2xl font-semibold leading-none tracking-tighter  text-black   text-center">Medicamentos</h3>
+                    <h3 className="text-2xl font-semibold leading-none tracking-tighter  text-black   text-center">Noticias</h3>
                     <p className="text-lg font-medium text-justify text-gray-800">
-                      En nuestro sitio, encontrarás información precisa y actualizada sobre una amplia variedad de medicamentos.
+                      En nuestro sitio, encontrarás información precisa y actualizada sobre una amplia variedad de Noticias.
                     </p>
                   </div>
                 </div>
@@ -145,7 +145,7 @@ function Index() {
           </div>
         </div>
 
-        <div className="mx-8 px-4 pt-12 sm:px-6 sm:pt-22 lg:px-8 ">
+        <div className="mx-8 px-4 pt-12 sm:px-6 sm:pt-22 lg:px-8  ">
           <div className="max-w-3xl">
             <h2 className="text-2xl font-bold sm:text-3xl text-justify ">
               Gracias por visitarnos. Estás a punto de adentrarte en un viaje de descubrimiento.
@@ -156,20 +156,20 @@ function Index() {
             <div className="h-4/6 flex flex-wrap">
               <div className="flex flex-wrap md:-m-2 m-1 h-112">
                 <div className="flex flex-wrap h-4/6">
-                  <div className="md:p-2 p-1 w-1/2 h-1/3">
-                    <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src="https://th.bing.com/th/id/OIG.hQA7FKFM7u_kQeSn_b_A?pid=ImgGn" />
+                  <div className="md:p-2 p-1 w-1/2 h-2/3">
+                    <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src="https://images.pexels.com/photos/3376799/pexels-photo-3376799.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                   </div>
-                  <div className="md:p-2 p-1 w-1/2 h-1/3">
-                    <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src="https://th.bing.com/th/id/OIG.o5_MjcAC1M_VHq8qiu.2?pid=ImgGn" />
+                  <div className="md:p-2 p-1 w-1/2 h-2/3">
+                    <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src="https://images.pexels.com/photos/3376790/pexels-photo-3376790.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                   </div>
                   <div className="md:p-2 p-1 ">
-                    <img alt="gallery" className="w-full h-1/2 object-cover object-center block rounded-lg" src="https://th.bing.com/th/id/OIG.SMBUYR8pBWq1LppYAjhm?pid=ImgGn&w=1024&h=1024&rs=1" />
+                    <img alt="gallery" className="w-full h-1/2 object-cover object-center block rounded-lg" src="https://images.pexels.com/photos/4021775/pexels-photo-4021775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="h-4/6">
+            <div className="h-5/6">
               <article className="space-y-2 text-gray-900">
                 <p className="text-justify font-normal">
                   En nuestro continuo compromiso de brindar información valiosa sobre salud y bienestar, te invitamos a explorar Med-Health.
@@ -184,13 +184,13 @@ function Index() {
                 </p>
               </article>
 
-              <article className="flex bg-white transition hover:shadow-xl mt-6">
+              <article className="flex bg-white transition hover:shadow-xl mt-4">
 
                 {/* Carta */}
-                <div className="hidden sm:block sm:basis-56">
+                <div className="sm:block sm:basis-56">
                   <img
                     alt="Medicina"
-                    src="https://th.bing.com/th/id/OIG.NTLmZIiUhqg.ykpmYsHl?pid=ImgGn&w=1024&h=1024&rs=1"
+                    src="https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                     className="aspect-square h-full w-full object-cover"
                   />
                 </div>

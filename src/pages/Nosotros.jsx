@@ -13,14 +13,14 @@ function Nosotros() {
             <section className="text-gray-600 body-font ">
                 <div className="container mx-auto max-w-full flex px-5 py-24 md:flex-row flex-col items-center colors ">
                     <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center ">
-                        <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900 text-center ">
+                        <h1 className="title-font sm:text-5xl text-3xl  mb-4 font-bold text-gray-900 text-center ">
                             Confia enﾠ
                             <br className="hidden lg:inline-block " />
                             <span className="bg-clip-text text-yellow-600 font-bold ">
                                 Med-Health
                             </span>
                         </h1>
-                        <p className="mb-8 leading-relaxed font-semibold text-white text-justify">
+                        <p className="mb-8 leading-relaxed font-bold text-white text-justify">
                             Nuestra dedicación a la excelencia en la atención médica es lo que nos impulsa a ser líderes en el cuidado de la salud. En Med-Health, combinamos la experiencia de nuestro equipo médico con la tecnología más avanzada para brindarte la atención más cercana y efectiva posible. Nuestra misión es proporcionar atención de calidad, compasión y esperanza a cada paciente que confía en nosotros.
                             Estamos comprometidos con su bienestar y en convertir cada experiencia de atención médica en una historia de éxito.
                         </p>

@@ -12,7 +12,7 @@ function NoticiasHeader() {
                     ></video>
                 </div>
                 <div className="video-content space-y-2 z-50">
-                    <h1 className="font-bold text-5xl mb-4">Descubre Noticias Sobre Salud</h1>
+                    <h1 className="font-bold text-5xl mb-4">Descubre noticias sobre salud</h1>
                     <h3 className="font-semibold text-xl text-justify pl-4 pr-4 mt-4 lg:pl-48 lg:pr-48">Descubre las noticias más recientes que impactan el mundo. Mantente actualizado con nuestra cobertura rápida y confiable de eventos globales, innovaciones tecnológicas y tendencias destacadas. </h3>
                 </div>
             </section>

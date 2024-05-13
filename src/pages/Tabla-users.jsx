@@ -25,9 +25,10 @@ function TablaUsers(){
 
     //Obtener usuarios
     const [ Users, setUsers ] = useState([]);
-    useEffect( () => {
-        fetchUsers();
-    },[]);
+    useEffect(() => {
+            fetchUsers();
+    }, []);
+    
 
     const fetchUsers = async () => {
         const response = await axios.get('http://localhost:3000/users')
@@ -41,7 +42,7 @@ function TablaUsers(){
 
         if(response.status == 200){
             setShowDeleteSuccessMessage(true);
-            setTimeout(() => setShowDeleteSuccessMessage(false), 3000);
+            setTimeout(() => setShowDeleteSuccessMessage(false), 2000);
             fetchUsers();
         }else{
             alert("Error");
@@ -56,16 +57,21 @@ function TablaUsers(){
     //Editar usuarios
     const handleEdit = async (id) => {
         const user = Users.find((user) => user.id === id);
-        setUserToEdit(user);
-        setEditForm(true);
+        if (user) {
+            setUserToEdit(user);
+            setEditForm(true);
+        } else {
+            console.error("Usuario no encontrado");
+        }
     };
+    
 
     //Mostrar alerta cuando se registre nuevo usuario
     const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
     const handleUserAdded = () => {
     setShowSuccessMessage(true);
-    setTimeout(() => setShowSuccessMessage(false), 3000); // Ocultar mensaje después de 3 segundos
+    setTimeout(() => setShowSuccessMessage(false), 2000); // Ocultar mensaje después de 3 segundos
 
     fetchUsers(); // Recargar la lista de usuarios
     };
@@ -210,6 +216,7 @@ function TablaUsers(){
 
             {mostrarForm && <FormMod onCerrar={handleCerrarForm} onUserAdded={handleUserAdded}/>}
             {mostrarEditForm && userToEdit && <FormEditMod user={userToEdit} onCerrar={handleCerrarEdit} />}
+
         </>
     )
 }

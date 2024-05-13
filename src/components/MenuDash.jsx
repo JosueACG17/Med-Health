@@ -58,7 +58,7 @@ function MenuDash (){
                 <li>
                     <a href="/home">
                         <i><FontAwesomeIcon icon={faDoorOpen} /></i>
-                        <span>Salir</span>
+                        <span>Home</span>
                     </a>
                 </li>
 

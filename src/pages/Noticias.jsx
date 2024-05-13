@@ -72,13 +72,13 @@ const NewsAPI = () => {
                   src={article.urlToImage}
                   alt="Imagen"
                 />
-                <div className="relative z-20 max-w-lg min-h-lg p-3 mx-auto -mt-24 font-bold text-lg text-center bg-white border-2 border-black rounded-md shadow ">
+                <div className="relative z-20 max-w-lg min-h-lg lg:h-72 p-3 mx-auto -mt-24 font-bold text-lg text-center bg-white border-2 border-black rounded-md shadow ">
                   {article.title}
                   <p className="mt-3 text-sm text-justify text-gray-900 font-medium md:text-sm">
                     {article.description}
                   </p>
                   <a
-                    className="group relative inline-flex items-center overflow-hidden rounded bg-blue-800 px-6 py-3 mt-1 text-white focus:outline-none focus:ring active:bg-indigo-500"
+                    className="group relative mt-3 inline-flex items-center overflow-hidden rounded bg-blue-800 px-6 py-3  text-white focus:outline-none focus:ring active:bg-indigo-500"
                     href={article.url}
                   >
                     <span className="absolute -end-full transition-all group-hover:end-4">

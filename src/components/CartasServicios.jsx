@@ -1,4 +1,5 @@
 import React from "react";
+import New from "../img/Carta_Noticias.jpeg"
 
 function CartasServicios() {
     return (
@@ -101,7 +102,7 @@ function CartasServicios() {
                                     <div className="relative flex w-full max-w-[50rem] h-[25rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md overflow-hidden hover:shadow-lg transition duration-400 ease-in-out border-2 border-blue-800 hover:border-black hover:shadow-black">
                                         <div class="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
                                             <img
-                                                src="https://th.bing.com/th/id/OIG.OqTo.xFOQHfiExd52zlq?pid=ImgGn"
+                                                src={New}
                                                 alt="image"
                                                 class="h-full w-full object-cover"
                                             />

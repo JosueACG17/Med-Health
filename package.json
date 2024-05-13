@@ -33,6 +33,7 @@
     "react-router-dom": "^6.19.0",
     "react-scroll": "^1.9.0",
     "react-spring": "^9.7.3",
+    "react-transition-group": "^4.4.5",
     "react-tsparticles": "^2.12.2",
     "react-visibility-sensor": "^5.1.1",
     "sweetalert2": "^11.10.0"

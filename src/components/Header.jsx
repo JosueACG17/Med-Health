@@ -80,7 +80,7 @@ function Header() {
                     <div className="text-center text-white font-semibold mb-1">
                       ¡Hola, {profile?.given_name || respuesta?.name || profile?.UserName}!
                     </div>
-                    <img className="ml-28 rounded-lg mb-1 h-24 w-24 " src={profile?.picture || imagen || respuesta?.picture.data.url} alt="user image" />
+                    <img className="ml-28 rounded-lg mb-1 h-24 w-24 " src={imagen} />
                     <p className='text-blue-800 font-semibold'>Nombre:</p>
                     <p className='font-medium'>{profile?.name || respuesta?.name || profile?.Nombre}</p>
                     <p className='text-blue-800 font-semibold'>Correo Electrónico:</p>
